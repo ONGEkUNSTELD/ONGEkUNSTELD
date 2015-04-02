@@ -700,7 +700,7 @@ div.sharedaddy h3 {
 }
 .teaserTitle {
 	text-transform:uppercase;
-	a	font-family:"lft-etica",sans-serif !important;
+	font-family:"lft-etica",sans-serif !important;
 	font-size:1em;
 	font-style:normal;
 	font-size:15px;
@@ -712,24 +712,30 @@ div.sharedaddy h3 {
 	padding-bottom:0px;
 }
 .teaserP p {
+    font-family:"lft-etica",sans-serif !important;
 	padding-top:0px !important;
 	margin:0px;
 	padding-bottom:15px;
+    font-size:1em;
+	letter-spacing:.06em;
+    font-weight: 200;
 }
 .teaserP a {
 	font-style:italic !important;
 	text-decoration:underline !important;
 	font-weight: 900;
+    
 }
 /* ----------- CONTENT --- GERELATEERD ---------------------*/
 #gerelateerdWrapper {
 	max-width:100%;
 	background-color:#fff;
 	display:block;
+    display:none;
 	margin:0 auto;
 	height:700px;
 	margin-bottom:0px;
-	display:none;
+	
 	/*verbergen totdat we de opmaak op orde hebben*/
 }
 .gerelateerdContainer {
