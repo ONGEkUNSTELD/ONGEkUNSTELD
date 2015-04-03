@@ -35,6 +35,8 @@
 	<script src="//use.typekit.net/exf2nim.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		
 	<!-- Moving Shadow -->
 	<script type="text/javascript">
 	$(function() {
@@ -50,8 +52,6 @@
 		});
 	});
 	</script>
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 	</head>
 
