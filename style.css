@@ -166,6 +166,22 @@ div.entry-header-Wrapper .entry-content {
 .masthead-fixed {
 	padding-top:0px !important;
 }
+
+	/* Fixed Header */
+
+	.masthead-fixed .site-header {
+		position: fixed;
+		top: 0;
+	}
+
+	.admin-bar.masthead-fixed .site-header {
+		top: 0px;
+	}
+
+	.masthead-fixed .site-main {
+		margin-top: 0px;
+	}
+	
 /*---------------------------------- NAV --------------------------------------------*/
 /* Make room for the search toggle and site description in mobile sidebar */
 #slideout-top {
