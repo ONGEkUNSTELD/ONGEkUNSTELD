@@ -22,34 +22,38 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
-	<script src="//use.typekit.net/exf2nim.js"></script>
-<script>try{Typekit.load();}catch(e){}</script>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	
-<script type="text/javascript">
-$(function() {
-    var header = $(".clearHeader");
-    $(window).scroll(function() {    
-        var scroll = $(window).scrollTop();
-    
-        if (scroll >= 80) {
-            header.removeClass('clearHeader').addClass("headershadow");
-        } else {
-            header.removeClass("headershadow").addClass('clearHeader');
-        }
-    });
-});
-
-
-</script>
-
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
+	
 	<?php wp_head(); ?>
-</head>
+	
+	<!-- Adobe Typekit -->
+	<script src="//use.typekit.net/exf2nim.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+
+	<!-- Moving Shadow -->
+	<script type="text/javascript">
+	$(function() {
+		var header = $(".clearHeader");
+		$(window).scroll(function() {    
+			var scroll = $(window).scrollTop();
+		
+			if (scroll >= 80) {
+				header.removeClass('clearHeader').addClass("headershadow");
+			} else {
+				header.removeClass("headershadow").addClass('clearHeader');
+			}
+		});
+	});
+	</script>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+	</head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
