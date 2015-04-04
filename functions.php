@@ -244,6 +244,15 @@ add_action( 'after_setup_theme', 'wpse_custom_header_setup' );
 if ( ! isset( $content_width ) )
     $content_width = 640;
 
+/*Verwijder mogelijkheid tot reageren op media*/
+function filter_media_comment_status( $open, $post_id ) {
+	$post = get_post( $post_id );
+	if( $post->post_type == 'attachment' ) {
+		return false;
+	}
+	return $open;
+}
+add_filter( 'comments_open', 'filter_media_comment_status', 10 , 2 );
 	
 
 ?>
