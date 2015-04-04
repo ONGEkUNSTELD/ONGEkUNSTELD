@@ -239,5 +239,11 @@ function wpse_custom_header_setup() {
 }
 add_action( 'after_setup_theme', 'wpse_custom_header_setup' );	
 	
+	
+/*Breedte van Galleires in artikelen*/
+if ( ! isset( $content_width ) )
+    $content_width = 640;
+
+	
 
 ?>
