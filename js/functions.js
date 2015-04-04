@@ -79,21 +79,11 @@
 			var mastheadHeight = $( '#masthead' ).height(),
 				toolbarOffset, mastheadOffset;
 
-			if ( mastheadHeight > 48 ) {
-				body.removeClass( 'masthead-fixed' );
+			if ( mastheadHeight > 500 ) {
+				
 			}
 
 			if ( body.is( '.header-image' ) ) {
-				toolbarOffset  = body.is( '.admin-bar' ) ? $( '#wpadminbar' ).height() : 0;
-				mastheadOffset = $( '#masthead' ).offset().top - toolbarOffset;
-
-				_window.on( 'scroll.twentyfourteen', function() {
-					if ( ( window.scrollY > mastheadOffset ) && ( mastheadHeight < 49 ) ) {
-						body.addClass( 'masthead-fixed' );
-					} else {
-						body.removeClass( 'masthead-fixed' );
-					}
-				} );
 			}
 		}
 

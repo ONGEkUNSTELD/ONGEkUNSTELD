@@ -105,9 +105,7 @@ button:active,.button:active,input[type="button"]:active,input[type="reset"]:act
     margin: 0 auto;
 }
 .header-main {
-	display:inline;
-
-    
+	display:inline;  
 }
 .site-title {
 	margin:0 0 0 20px;
@@ -165,6 +163,25 @@ div.entry-header-Wrapper .entry-content {
 	padding-right:31px;
 	display: none;
 }
+.masthead-fixed {
+	padding-top:0px !important;
+}
+
+	/* Fixed Header */
+
+	.masthead-fixed .site-header {
+		position: fixed;
+		top: 0;
+	}
+
+	.admin-bar.masthead-fixed .site-header {
+		top: 32px;
+	}
+
+	.masthead-fixed .site-main {
+		margin-top: 0px;
+	}
+	
 /*---------------------------------- NAV --------------------------------------------*/
 /* Make room for the search toggle and site description in mobile sidebar */
 #slideout-top {
@@ -959,9 +976,7 @@ color: #828282;
 	background-color:#fff;
 	color:#000000;
 }
-#masthead {
-	height:80px;
-}
+
 .topbar-menu {
 	display:block;
 	background-color:none;
