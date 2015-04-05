@@ -253,12 +253,6 @@ function filter_media_comment_status( $open, $post_id ) {
 	return $open;
 }
 add_filter( 'comments_open', 'filter_media_comment_status', 10 , 2 );
-
-/*load parent theme CSS*/
-function load_parent_theme_css() {
-    wp_enqueue_style( 'parent-theme', get_template_directory_uri() . '/style.css' );
-}
- 
-add_action( 'wp_enqueue_scripts', 'load_parent_theme_css' );	
+	
 
 ?>
