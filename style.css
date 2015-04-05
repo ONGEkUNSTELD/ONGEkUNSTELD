@@ -504,9 +504,13 @@ h2+p {
 	font-style:normal;
 	font-weight:200;
 }
-.page .entry-content {
-max-width:640px;
-padding:30px;
+/*Indent van kopjes gelijktrekken tussen page en artikel*/
+.page .entry-content h2{
+padding-left:88px;
+}
+/*Titel gelijktrekken tussen page en artikel*/
+.page .entry-header h1 {
+padding-top:63px;
 }
 .site-content .entry-meta>span {
 	margin-right: 0px;
