@@ -70,19 +70,19 @@ add_action( 'loop_start', 'jptweak_remove_share' );
 */
 	
 	
-	/*change login logo
+	/*change login logo*/
 	add_action("login_head", "my_login_head");
 	function my_login_head() {
 	echo "
 	<style>
 	body.login #login h1 a {
-		background: url('../wp-content/uploads/2011/07/favicon10.png') no-repeat scroll center top transparent;
-		height: 424;
-		width: 330;
+		background: url('../wp-content/themes/ONGEkUNSTELD/images/icons/favicon.png') no-repeat scroll center top transparent;
+		height: 424px;
+		width: 330px;
 	}
 	</style>
 	";
-	} */
+	} 
 	
 	// REMOVE META BOXES FROM WORDPRESS DASHBOARD FOR ALL USERS
 function remove_dashboard_widgets(){
