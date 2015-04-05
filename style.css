@@ -504,6 +504,10 @@ h2+p {
 	font-style:normal;
 	font-weight:200;
 }
+.page .entry-content {
+max-width:640px;
+padding:30px;
+}
 .site-content .entry-meta>span {
 	margin-right: 0px;
 }
