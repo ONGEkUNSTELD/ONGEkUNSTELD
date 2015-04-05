@@ -948,6 +948,34 @@ background-color:#cc5200;
 #infinite-footer .blog-credits a:hover,#infinite-footer .blog-info a:hover {
 color: #828282;
 }
+
+/*------------------- Formulieren ------------------------*/
+.gform_wrapper {
+max-width: 590px !important;
+margin:0 auto !important;
+text-align:justify !important;
+}
+.gform_wrapper li.gfield_html {
+max-width:100%;
+text-align:justify;
+}
+.gform_wrapper h3 {
+	font-size: .8em;
+	text-transform: uppercase;
+	font-style:normal;
+	font-weight:700 !important;
+	margin: 20px 0 12px;
+}
+.gfield_label {
+text-transform:uppercase;
+font-size:1em;
+text-indent:20px;
+margin-top:25px !important;
+}
+
+textarea, input {
+background-color:#e8e8e8;
+}
 /* ----------------- MOBIEL -------------------------------*/
 /**Adjustments for the desktop topbar when screen is small**/
 @media screen and (max-width:768px) {
