@@ -964,8 +964,7 @@ text-align:justify;
 	text-transform: uppercase;
 	font-style:normal;
 	font-weight:700 !important;
-	padding-bottom:10px;
-	letter-spacing:.1em;
+	margin: 20px 0 12px;
 }
 .gfield_label {
 text-transform:uppercase;
