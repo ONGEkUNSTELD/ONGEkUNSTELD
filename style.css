@@ -948,6 +948,18 @@ background-color:#cc5200;
 #infinite-footer .blog-credits a:hover,#infinite-footer .blog-info a:hover {
 color: #828282;
 }
+
+/*------------------- Formulieren ------------------------*/
+.gform_wrapper {
+max-width: 590px !important;
+margin:0 auto !important;
+text-align:justify !important;
+}
+.gform_wrapper li.gfield_html {
+max-width:100%;
+text-align:justify;
+}
+
 /* ----------------- MOBIEL -------------------------------*/
 /**Adjustments for the desktop topbar when screen is small**/
 @media screen and (max-width:768px) {
