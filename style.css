@@ -960,11 +960,11 @@ max-width:100%;
 text-align:justify;
 }
 .gform_wrapper h3 {
-	font-size: .8em;
-	text-transform: uppercase;
-	font-style:normal;
-	font-weight:700 !important;
-	margin: 20px 0 12px;
+font-size: .8em;
+text-transform: uppercase;
+font-style:normal;
+font-weight:700 !important;
+margin: 20px 0 12px;
 }
 .gfield_label {
 text-transform:uppercase;
@@ -972,7 +972,6 @@ font-size:1em;
 text-indent:20px;
 margin-top:25px !important;
 }
-
 textarea, input {
 background-color:#e8e8e8;
 border-radius:0px;
