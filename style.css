@@ -959,7 +959,24 @@ text-align:justify !important;
 max-width:100%;
 text-align:justify;
 }
+.gform_wrapper h3 {
+	font-size: .8em;
+	text-transform: uppercase;
+	font-style:normal;
+	font-weight:700 !important;
+	padding-bottom:10px;
+	letter-spacing:.1em;
+}
+.gfield_label {
+text-transform:uppercase;
+font-size:1em;
+text-indent:20px;
+margin-top:25px !important;
+}
 
+textarea, input {
+background-color:#e8e8e8;
+}
 /* ----------------- MOBIEL -------------------------------*/
 /**Adjustments for the desktop topbar when screen is small**/
 @media screen and (max-width:768px) {
