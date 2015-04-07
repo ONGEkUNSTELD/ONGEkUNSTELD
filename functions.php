@@ -69,19 +69,27 @@ add_action( 'loop_start', 'jptweak_remove_share' );
 */
 	
 	
-	/*change login logo
-	add_action("login_head", "my_login_head");
-	function my_login_head() {
-	echo "
-	<style>
-	body.login #login h1 a {
-		background: url('../wp-content/uploads/2011/07/favicon10.png') no-repeat scroll center top transparent;
-		height: 424;
-		width: 330;
-	}
+	/*Verander login logo*/
+	function my_login_logo() { ?>
+    <style type="text/css">
+        .login h1 a {
+		background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/icons/favicon.png);
+		padding-bottom: 30px;
+        }
 	</style>
-	";
-	} */
+	<?php }
+	add_action( 'login_enqueue_scripts', 'my_login_logo' );
+	
+	/*Herverwijs URL van logo inlogpagina*/
+	function my_login_logo_url() {
+		return home_url();
+	}
+	add_filter( 'login_headerurl', 'my_login_logo_url' );
+	
+	function my_login_logo_url_title() {
+		return 'ONGEkUNSTELD Columns en recensies zonder opsmuk';
+	}
+	add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 	
 	// REMOVE META BOXES FROM WORDPRESS DASHBOARD FOR ALL USERS
 function remove_dashboard_widgets(){
