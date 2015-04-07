@@ -120,8 +120,7 @@
 	</style>
 	<?php
 	}	
-	
-	
+		
 	//Custom Statuses
 	add_filter( 'display_post_states','custom_post_state');
 	function custom_post_state( $states ) {
@@ -181,7 +180,7 @@
 		-moz-border-radius:3px;
 		}
 		/* ----------------------------------- */
-		/*   change color of messages bellow            */
+		/*   change color of messages bellow    */
 		/* ----------------------------------- */
 		.afgekeurd{background:#FF0000;color:#fff;}
 		.terug_beeld_ontbreekt{background:#FF8D00;color:#fff;}
@@ -247,7 +246,6 @@
 	}
 	add_action( 'after_setup_theme', 'wpse_custom_header_setup' );	
 	
-	
 	/*Breedte van Galleires in artikelen*/
 	if ( ! isset( $content_width ) )
     $content_width = 640;
@@ -261,6 +259,5 @@
 		return $open;
 	}
 	add_filter( 'comments_open', 'filter_media_comment_status', 10 , 2 );
-	
 	
 ?>
