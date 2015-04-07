@@ -4,8 +4,7 @@
 add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size( 200, 96, true );
 
-/*Smooth scroll Top functie que*/
-wp_enqueue_script( 'smoothup', get_template_directory_uri() . '/js/smoothscroll.js', array( 'jquery' ), '',  true );
+
 
 
 /**
