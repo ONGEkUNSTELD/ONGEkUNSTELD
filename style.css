@@ -43,6 +43,12 @@ strong {
 	font-weight:600;
 	font-style:normal;
 }
+
+.page strong {
+		font-weight:600;
+		font-size:1em;
+		text-indent:20px !important;
+}
 em {
 	font-weight:100;
 	font-style:italic;
@@ -466,6 +472,10 @@ nav {
 h2+p {
 	text-indent:0px !important;
 }
+
+.page .entry-content p {
+	text-indent:0px;
+	}
 .entry-content h2 {
 	padding-left:42px;
 	font-family:"lft-etica",sans-serif;
