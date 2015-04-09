@@ -17,11 +17,7 @@
 	<?php get_sidebar( 'footer' ); ?>
 	
 	<div class="site-info">
-		&copy; <?php 
-			$copyYear = 2011; 
-			$curYear = date('Y'); 
-			echo $copyYear . (($copyYear != $curYear) ? '–' . $curYear : '');
-		?> ONGEkUNSTELD
+		<a href="/algemene-voorwaarden/">&copy; 2011–<?php echo date('Y'); ?> <?php bloginfo('name'); ?></a>
 		<a href="feed:https://www.ongekunsteld.net/feed/"><span class="rss">R</span></a>
 		<a href="https://twitter.com/ongekunsteld"><span class="twitter">T</span></a>
 		<a href="https://www.facebook.com/ongekunsteld.net"><span class="facebook">F</span></a>	

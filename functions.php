@@ -15,7 +15,7 @@
 	<div id="infinite-footer" class="site-footer">
 		<div class="container" class="site-footer">
 			<div class="blog-info">
-				<a href="/copyright/">&copy; 2011–<?php echo date('Y'); ?> <?php bloginfo('name'); ?></a>	
+				<a href="/algemene-voorwaarden/">&copy; 2011–<?php echo date('Y'); ?> <?php bloginfo('name'); ?></a>	
 				<a href="feed:https://www.ongekunsteld.net/feed/"><span class="rss">R</span></a>
 				<a href="https://twitter.com/ongekunsteld"><span class="twitter">T</span></a>
 				<a href="https://www.facebook.com/ongekunsteld.net"><span class="facebook">F</span></a>		
