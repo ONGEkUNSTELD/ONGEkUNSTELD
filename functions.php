@@ -16,19 +16,10 @@
 		<div class="container" class="site-footer">
 			<div class="blog-info">
 				<a href="/copyright/">&copy; 2011–<?php echo date('Y'); ?> <?php bloginfo('name'); ?></a>	
-				<div class="rss">
-					<a href="feed:https://www.ongekunsteld.net/feed/">R</a>
-					
-				</div>
-				<div class="twitter">
-					<a href="https://twitter.com/ongekunsteld">T</a>
-				</div>
-				<div class="facebook">
-					<a href="https://www.facebook.com/ongekunsteld.net">F</a>
-				</div>
-				
+				<a href="feed:https://www.ongekunsteld.net/feed/"><span class="rss">R</span></a>
+				<a href="https://twitter.com/ongekunsteld"><span class="twitter">T</span></a>
+				<a href="https://www.facebook.com/ongekunsteld.net"><span class="facebook">F</span></a>		
 			</div>	
-			
 			
 		</div>
 	</div>
