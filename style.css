@@ -356,6 +356,9 @@ nav {
 .screen-reader-text {
 	background-color:#FFF;
 }
+.headroom {
+	 padding-top:60px;
+	}
 .site:before {
 		background-color:rgba(255,255,255,0);
 		content:"";

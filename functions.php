@@ -248,4 +248,5 @@
 	}
 	add_filter( 'comments_open', 'filter_media_comment_status', 10 , 2 );
 	
+	error_reporting(E_ALL & ~E_NOTICE);
 ?>
