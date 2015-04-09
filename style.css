@@ -893,6 +893,8 @@ color:#fff;
 background:#e8e8e8 !important;
 padding:0px 15px 0px 15px !important;
 border-width:0px 0 0 !important;
+max-width:1280px !important;
+margin:0 auto !important;
 }
 .blog-info {
 width:100% !important;
