@@ -24,13 +24,14 @@ if ( is_single() ) :
 		<?php if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) && twentyfourteen_categorized_blog() ) : ?>
 		<div class="entry-meta">
 			<span class="cat-links"><?php echo get_the_category_list(); ?></span>
+			<span class="entry-meta-datum"><?php the_date(); ?></span>
 			
 			<?php
 			if ( 'post' == get_post_type() ) ?>
 			<span class="entry-meta-functie">TEKSt</span> <span class="entry-meta-naam"><?php the_author_posts_link(); ?></span> &nbsp; &nbsp; 
 			<span class="entry-meta-functie">BEELD</span> <span class="entry-meta-naam"><?php echo get_post_meta( get_the_ID(), 'Beeldnaam', true); ?></span>
 			<?php
-				/*twentyfourteen_posted_on();*/
+				 
 				
 				if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) :
 			?>

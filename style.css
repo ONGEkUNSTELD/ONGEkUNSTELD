@@ -516,6 +516,15 @@ h2+p {
 	font-style:normal;
 	font-weight:200;
 }
+.entry-meta-datum {
+	float:right;
+	clear:right;
+	color:#000;
+	font-family:"lft-etica",sans-serif;
+	font-size:0.78em;
+	font-weight:200;
+	display:inline;
+	}
 /*Indent van kopjes gelijktrekken tussen page en artikel*/
 .page .entry-content h2{
 padding-left:73px;
