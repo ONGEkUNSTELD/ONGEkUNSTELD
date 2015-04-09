@@ -162,6 +162,7 @@ div.entry-header-Wrapper {
 div.entry-header-Wrapper .entry-title {
 	margin-left:-21px !important;
 	padding-top:8px;
+	font-weight:400;
 }
 div.entry-header-Wrapper .entry-content {
 	margin-left:31px !important;
