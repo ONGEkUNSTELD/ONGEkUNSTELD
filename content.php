@@ -24,7 +24,7 @@ if ( is_single() ) :
 		<?php if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) && twentyfourteen_categorized_blog() ) : ?>
 		<div class="entry-meta">
 			<span class="cat-links"><?php echo get_the_category_list(); ?></span>
-			<span class="entry-meta-datum"><?php the_date(); ?></span>
+			<span class="entry-meta-datum"><?php the_date('F Y'); ?></span>
 			
 			<?php
 			if ( 'post' == get_post_type() ) ?>
