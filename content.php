@@ -29,7 +29,15 @@ if ( is_single() ) :
 			<?php
 			if ( 'post' == get_post_type() ) ?>
 			<span class="entry-meta-functie">TEKSt</span> <span class="entry-meta-naam"><?php the_author_posts_link(); ?></span> &nbsp; &nbsp; 
-			<span class="entry-meta-functie">BEELD</span> <span class="entry-meta-naam"><?php echo get_post_meta( get_the_ID(), 'Beeldnaam', true); ?></span>
+			<span class="entry-meta-functie">BEELD</span> <span class="entry-meta-naam">
+			<?php $beeldmakerart = get_field('beeldmaker'); 
+			if($beeldmakerart) {
+				$beeldData = array_values($beeldmakerart);
+				echo $beeldData[5];
+			}
+					
+					
+				?></span>
 			<?php
 				 
 				
