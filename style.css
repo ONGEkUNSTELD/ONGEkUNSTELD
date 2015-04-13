@@ -871,6 +871,7 @@ div.sharedaddy h3, sd-title {
     left: 0;
     bottom: 0;
     width: 100%;
+	position:fixed;
 }
 .site-info {
     max-width: 1280px;
