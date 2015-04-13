@@ -91,7 +91,9 @@
 	<?php if ( is_home()) : ?>
 	<div class="entry-header-Wrapper">
 	<header class="entry-header info-header">
-		<h3 class="entry-title">Aanvechtbare <span style="text-transform:lowercase">k</span>UNSTKRITIEK in tekst en beeld</h3>
+		<!--<h3 class="entry-title">Aanvechtbare <span style="text-transform:lowercase">k</span>UNSTKRITIEK in tekst en beeld</h3>-->
+		<h3 class="entry-title"><?php the_field('headertekst', 'option'); ?></h3>
+		
 		<div class="entry-content"></div>
 		</header>
 		</div>
