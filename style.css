@@ -441,8 +441,11 @@ nav {
     font-weight: 200;
     letter-spacing: 0.1em;
     font-style: normal;
-
 }
+
+.entry-summary p {
+	margin-bottom:54px;
+	}
 .entry-content {
 	text-align:justify;
 	text-justify:inter-word;
