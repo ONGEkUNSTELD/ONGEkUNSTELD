@@ -441,8 +441,11 @@ nav {
     font-weight: 200;
     letter-spacing: 0.1em;
     font-style: normal;
-
 }
+
+.entry-summary p {
+	margin-bottom:54px;
+	}
 .entry-content {
 	text-align:justify;
 	text-justify:inter-word;
@@ -871,6 +874,7 @@ div.sharedaddy h3, sd-title {
     left: 0;
     bottom: 0;
     width: 100%;
+	position:fixed;
 }
 .site-info {
     max-width: 1280px;
