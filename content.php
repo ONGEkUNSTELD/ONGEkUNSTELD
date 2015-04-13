@@ -9,7 +9,7 @@
 		* @since Twenty Fourteen 1.0
 	*/
 	
-if ( is_single() ) :
+	if ( is_single() ) :
 ?>
 <div class="headroom">
 </div>
@@ -30,26 +30,23 @@ if ( is_single() ) :
 			if ( 'post' == get_post_type() ) ?>
 			<span class="entry-meta-functie">TEKSt</span> <span class="entry-meta-naam"><?php the_author_posts_link(); ?></span> &nbsp; &nbsp; 
 			<span class="entry-meta-functie">BEELD</span> <span class="entry-meta-naam">
-			<?php $beeldmakerart = get_field('beeldmaker'); 
-			if($beeldmakerart) {
-				$beeldData = array_values($beeldmakerart);
-				echo $beeldData[5];
-			}
+				<?php $beeldmakerart = get_field('beeldmaker'); 
+					if($beeldmakerart) {
+						$beeldData = array_values($beeldmakerart);
+						echo $beeldData[5];
+					} ?></span>
+					<?php
+						
+						
+						if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) :
+					?>
+					<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'twentyfourteen' ), __( '1 Comment', 'twentyfourteen' ), __( '% Comments', 'twentyfourteen' ) ); ?></span>
+					<?php
+						endif;
+						
+						/*edit_post_link( __( 'Edit', 'twentyfourteen' ), '<span class="edit-link">', '</span>' );*/
+					?>
 					
-					
-				?></span>
-			<?php
-				 
-				
-				if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) :
-			?>
-			<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'twentyfourteen' ), __( '1 Comment', 'twentyfourteen' ), __( '% Comments', 'twentyfourteen' ) ); ?></span>
-			<?php
-				endif;
-				
-				/*edit_post_link( __( 'Edit', 'twentyfourteen' ), '<span class="edit-link">', '</span>' );*/
-			?>
-			
 		</div>
 		<?php
 			endif;
@@ -170,4 +167,4 @@ if ( is_single() ) :
 					</div><!--eind gerelateerdContainer-->
 				</div><!--eind relatedposts-->
 			</div><!--eind gerelateerdWrapper-->
-		<?php endif; 				
+		<?php endif; 						
