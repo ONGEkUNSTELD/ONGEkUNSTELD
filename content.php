@@ -29,14 +29,19 @@
 			<?php
 			if ( 'post' == get_post_type() ) ?>
 			<span class="entry-meta-functie">TEKSt</span> <span class="entry-meta-naam"><?php the_author_posts_link(); ?></span> &nbsp; &nbsp; 
+			<!-- oude versie beeldnaam. Komt te vervallen -->
+			<span class="entry-meta-functie">BEELD</span> <span class="entry-meta-naam"><?php echo get_post_meta( get_the_ID(), 'Beeldnaam', true); ?></span>
+			<!-- einde oude versie -->
+			<!-- nieuiwe versie. IN wacht totdat beeldmakers gekoppeld zijn 
 			<span class="entry-meta-functie">BEELD</span> <span class="entry-meta-naam">
-				<!-- geef de URL van de beeldmaker(auteurpagina) en echo de naam. ACF functie --> 
+			
+				geef de URL van de beeldmaker(auteurpagina) en echo de naam. ACF functie  
 				<?php $beeldmakerart = get_field('beeldmaker'); 
 					if($beeldmakerart) {
 					$beeldData = array_values($beeldmakerart); ?>
 					<a href="<?php echo get_author_posts_url(  $beeldData[0]  ); ?>"><?php echo $beeldData[5]; ?></a> <?php
 					} ?></span>
-					
+					-->
 					<?php
 						if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) :
 					?>
