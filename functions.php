@@ -248,8 +248,18 @@
 	}
 	add_filter( 'comments_open', 'filter_media_comment_status', 10 , 2 );
 	
+	/* opties voor custom aanpassingen in het thema */ 
+	if( function_exists('acf_add_options_page') ) {
+			acf_add_options_page(array(
+			'page_title'   =>  'Header Titel',
+			'menu_title'   =>  'Header Titel',
+			'menu_slug'    =>  'header-title',
+			'capability'   =>  'manage_categories',
+			'redirect'     =>   false
+			));
+	}
 	
-
+	
 	
 	error_reporting(E_ALL & ~E_NOTICE);
 ?>
