@@ -727,8 +727,19 @@ li.share-linkedin a.sd-button>span {
 li.share-twitter a.sd-button>span {
 	background:#00abf0;
 }
-li.share-facebook a.sd-button:hover>span,li.share-google-plus-1 a.sd-button:hover>span,li.share-linkedin a.sd-button:hover>span,li.share-twitter a.sd-button:hover>span {
-	background:#000;
+li.share-facebook a.sd-button:hover>span {
+    background: #5274bb;
+}
+    
+li.share-google-plus-1 a.sd-button:hover>span {
+    background: #e3695a;
+}
+li.share-linkedin a.sd-button:hover>span {
+    background:#000;
+}
+li.share-twitter a.sd-button:hover>span {
+	background:#05b7ff;
+
 }
 .sd-content .sd-button span.share-count {
 	color:#fff !important;
@@ -737,7 +748,10 @@ li.share-facebook a.sd-button:hover>span,li.share-google-plus-1 a.sd-button:hove
 div.sharedaddy h3, sd-title {
 	padding-bottom:0px;
 	padding-top:10px;
+    padding-bottom:4px;
 	margin-bottom:0px;
+    font-size: 12px !important;
+    letter-spacing: 0.1em;
 	color:#000 !important;
 }
 /* Content Teaser DOE MEE! */
@@ -866,7 +880,7 @@ div.sharedaddy h3, sd-title {
 /*static footer*/
 .site-footer {
 	background-color:#e8e8e8;
-	font-size:12px;
+	font-size:11px;
 	letter-spacing:0.1em;
 	position:relative;
 	z-index:3;
@@ -934,7 +948,7 @@ float:left;
 color:#fff;
 }
 .blog-info a {
-font-size:12px !important;
+font-size:11px !important;
 letter-spacing:0.1em;
 color:#000 !important;
 border:0;
@@ -950,7 +964,7 @@ color:#828282 !important;
 .facebook {
 float:right;
 clear:none;
-background:#3B5998;
+background:#4965a0;
 height:30px;
 padding:0px 10px;
 vertical-align:middle;
@@ -963,7 +977,7 @@ color:#ffffff !important;
 color:#fff !important;
 }
 .facebook:hover {
-background-color:#293E6A;
+background-color:#5274bb;
 }
 .twitter {
 color:#ffffff !important;
@@ -981,7 +995,7 @@ color:#fff !important;
 color:#fff !important;
 }
 .twitter:hover {
-background-color:#0087bd;
+background-color:#05b7ff;
 }
 .rss {
 color:#ffffff !important;
@@ -999,7 +1013,7 @@ color:#fff !important;
 color:#fff !important;
 }
 .rss:hover {
-background-color:#cc5200;
+background-color:#ff7214;
 }
 
 #infinite-footer .blog-credits a:hover,#infinite-footer .blog-info a:hover {
