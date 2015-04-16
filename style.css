@@ -442,7 +442,6 @@ nav {
     letter-spacing: 0.1em;
     font-style: normal;
 }
-
 .entry-summary p {
 	margin-bottom:54px;
 	}
@@ -458,15 +457,28 @@ nav {
 	padding-top:23px !important;
 	padding-bottom:45px !important;
 }
-/*verberg eerste alinea ivm speciale styling.entry-content p:first-child{display: none;}*/
-/*verberg eerste alinea ivm speciale styling*/
-.entry-summary p:first-child {
-	display: block;
+/* Eerste paragraaf stylen */
+.entry-content p:first-child {
+	font-style:italic;
+	font-weight:400;
+	letter-spacing:.04em;
+	line-height:1.6em;
+	font-size:1.2em;
+	color:#000;
+	padding-top:32px !important;
+	padding-bottom:2px !important;
+	max-width:592px !important;
+	text-indent:0px;
+	margin-bottom:25px;
 }
-/*verberg eerste alinea ivm speciale styling*/
-.entry-summary p,.entry-summary h2 {
-	display: none;
-}
+.entry-content p:first-child em, .entry-content p:first-child strong {
+	font-weight:400;
+	letter-spacing:.04em;
+	line-height:1.6em;
+	color:#000;
+	}
+
+
 .entry-content p {
 	max-width:592px !important;
 	margin:0 auto;
@@ -645,12 +657,13 @@ padding-top:63px;
 	padding-bottom:2px !important;
 	max-width:592px !important;
 }
-.entry-summary em,.entry-summary strong {
+.entry-summary  em, .entry-summary  strong {
 	font-weight:400;
 	letter-spacing:.04em;
 	line-height:1.6em;
 	color:#000;
-}
+	}
+
 .primary-navigation {
 	font-size:12px;
 }
