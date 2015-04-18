@@ -81,7 +81,7 @@
 	
 	<?php if ( get_header_image() ) : ?>
 	<div id="site-banner">
-			<img src="<?php header_image(); ?>" width="1280px" height="240px" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+			<img class="customheader" src="<?php header_image(); ?>" width="1280px" height="240px" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
 	</div>
 	<?php endif; ?>
 	
