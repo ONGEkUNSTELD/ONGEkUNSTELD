@@ -111,6 +111,7 @@ button:active,.button:active,input[type="button"]:active,input[type="reset"]:act
 	display:block;
 	padding-top:58px;
 	background-size: 1280px 240px;
+	background-position: left bottom; 
 	background-repeat: no-repeat;
 	left:0;
 	top:0;
