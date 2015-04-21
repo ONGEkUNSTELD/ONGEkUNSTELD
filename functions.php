@@ -250,14 +250,15 @@
 	
 	/* opties voor custom aanpassingen in het thema */ 
 	if( function_exists('acf_add_options_page') ) {
-			acf_add_options_page(array(
-			'page_title'   =>  'Header Titel',
-			'menu_title'   =>  'Header Titel',
-			'menu_slug'    =>  'header-title',
-			'capability'   =>  'manage_categories',
-			'redirect'     =>   false
-			));
+		acf_add_options_page(array(
+		'page_title'   =>  'Header Titel',
+		'menu_title'   =>  'Header Titel',
+		'menu_slug'    =>  'header-title',
+		'capability'   =>  'manage_categories',
+		'redirect'     =>   false
+		));
 	}
+	
 	
 	
 	
