@@ -1079,15 +1079,15 @@ textarea, input {
 }
 /* ----------------- MOBIEL -------------------------------*/
 /**Adjustments for the desktop topbar when screen is small*/
-@media screen and (max-width:768px) {
+@media screen and (max-width:1080px) {
 
-	#teaserWrapper, #site-banner {
+}
+@media screen and (max-width:768px) {
+#teaserWrapper, #site-banner {
 	display:none !important;
-	}
-	
-	.menu-toggle {
-	
-	}	
+}	
+.menu-toggle {
+}	
 }
 
 /* ============== EIND @SCREENS =====================*/
