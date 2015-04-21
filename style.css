@@ -1078,53 +1078,37 @@ textarea, input {
 	border:0px;
 }
 /* ----------------- MOBIEL -------------------------------*/
-/**Adjustments for the desktop topbar when screen is small
+/**Adjustments for the desktop topbar when screen is small*/
 	@media screen and (max-width:768px) {
-	.search-toggle {
-	position:absolute;
-	top:-8px;
-	right:0px;
+#masthead {
+        height: 50px;
+    }
+    #top-social {
+        float:left;
+    }
+	#site-banner {
+	display:none !important;
 	}
-	.nav-menu hover ul ul li {
-	float:right;
-	background-color:none;
-	color:#000000;
-	font-style:normal;
-	font-weight:700;
-	font-family:"lft-etica",sans-serif;
+    .topbar-menu {
+        display: block;
+        background-color: black;
+    }
+    .primary-navigation.toggled-on {
+        display: block;
+        padding: 48px 0 0 0px;
+        background-color: black;
+    }
+    .nav-toggled {
+        padding-top: 48px !important;
+        padding-left: 0px !important;
+    }
+    h2.topbar-description {
+        display:none;
+    }
+	.site-main {
+	padding-top:100px;
 	}
-	.nav-menu {
-	float:right;
-	background-color:none;
-	color:#000000;
-	font-style:normal;
-	font-weight:700;
-	font-family:"lft-etica",sans-serif;
-	}
-	.sub-menu {
-	background-color:#fff;
-	color:#000000;
-	}
-	
-	.topbar-menu {
-	display:block;
-	background-color:none;
-	float:right;
-	}
-	.primary-navigation.toggled-on {
-	display:block;
-	padding:48px 0 0 0px;
-	background-color:black;
-	}
-	.nav-toggled {
-	padding-top:48px !important;
-	padding-left:0px !important;
-	}
-	h2.topbar-description {
-	display:none;
-	}
-	.content-area {
-	padding-top: 0px;
-	}
-	}
+}
+
+
 /* ============== EIND @SCREENS =====================*/
