@@ -162,4 +162,4 @@
 					</div><!--eind gerelateerdContainer-->
 				</div><!--eind relatedposts-->
 			</div><!--eind gerelateerdWrapper-->
-		<?php endif; 											
+		<?php endif;									
