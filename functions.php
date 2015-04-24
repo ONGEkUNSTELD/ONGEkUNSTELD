@@ -7,7 +7,7 @@
 	
 	/*---- wijzig update functies formulieren -----*/
 	add_filter( 'gform_upload_root_htaccess_rules', '__return_false' );
-
+	
 	
 	
 	/**
@@ -262,7 +262,19 @@
 		));
 	}
 	
-	
+
+			/* impporteer Schaduw JS voor header */
+		function shadow_script_import() {
+			wp_enqueue_script(
+			'HeaderShadow',
+			get_stylesheet_directory_uri() . '/js/HeaderShadow.js',
+			array( 'jquery' )
+			);
+		}
+		
+		add_action( 'wp_enqueue_scripts', 'shadow_script_import' );
+		
+
 	
 	
 	error_reporting(E_ALL & ~E_NOTICE);
