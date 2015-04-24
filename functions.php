@@ -5,6 +5,9 @@
 	set_post_thumbnail_size( 200, 96, true );
 	
 	
+	/*---- wijzig update functies formulieren -----*/
+	add_filter( 'gform_upload_root_htaccess_rules', '__return_false' );
+
 	
 	
 	/**
