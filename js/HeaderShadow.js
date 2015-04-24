@@ -10,14 +10,4 @@
 			} else {
 			header.removeClass('headershadow').addClass('clearHeader');
 		}
-<<<<<<< HEAD
-<<<<<<< HEAD
-	});
-=======
-	});
->>>>>>> parent of fbba68b... Heb een test gedaan
-=======
-	});
 
-/* TEST */
->>>>>>> parent of 99e4c9e... Test 2
