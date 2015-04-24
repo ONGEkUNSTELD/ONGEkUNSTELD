@@ -11,5 +11,3 @@
 			header.removeClass('headershadow').addClass('clearHeader');
 		}
 	});
-
-/* TEST */
