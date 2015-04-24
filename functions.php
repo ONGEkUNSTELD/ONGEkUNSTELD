@@ -263,7 +263,7 @@
 	}
 	
 
-			/* impporteer Schaduw JS voor header */
+	/* impprteer Schaduw JS voor header */
 		function shadow_script_import() {
 			wp_enqueue_script(
 			'HeaderShadow',
