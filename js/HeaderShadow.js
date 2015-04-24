@@ -10,4 +10,8 @@
 			} else {
 			header.removeClass('headershadow').addClass('clearHeader');
 		}
+<<<<<<< HEAD
 	});
+=======
+	});
+>>>>>>> parent of fbba68b... Heb een test gedaan
