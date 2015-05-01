@@ -35,22 +35,7 @@
 		<script src="//use.typekit.net/exf2nim.js"></script>
 		<script>try{Typekit.load();}catch(e){}</script>
         
-        <script type="text/javascript" src="../ONGEkUNSTELD/js/HeaderShadow.js"></script>
         
-<script>
-$j=jQuery.noConflict();
-
-$j(window).scroll(function() {    
-    var scroll = $j(window).scrollTop();
-
-    if (scroll >= 50) {
-        $j(".clearHeader").addClass("headershadow");
-    } else {
-        $j(".clearHeader").removeClass("headershadow");
-    }
-});
-</script>
-
 	</head>
 	
 	<body <?php body_class(); ?>>
@@ -98,4 +83,4 @@ $j(window).scroll(function() {
 			<?php endif; ?>
 			<!-- eind intro -->
 			
-		<div id="main" class="site-main">		
+		<div id="main" class="site-main">				
