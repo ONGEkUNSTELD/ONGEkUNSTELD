@@ -153,7 +153,8 @@ button:active,.button:active,input[type="button"]:active,input[type="reset"]:act
 	-moz-transition:box-shadow 2s;
 	transition:box-shadow 2s;
 }
-.headershadow {
+
+.clearHeader.headershadow {
 	-webkit-box-shadow: 0px 4px 4px 0px rgba(50, 50, 50, 0.21);
 	-moz-box-shadow:    0px 4px 4px 0px rgba(50, 50, 50, 0.21);
 	box-shadow:         0px 4px 4px 0px rgba(50, 50, 50, 0.21);

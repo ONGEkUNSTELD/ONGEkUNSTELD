@@ -262,7 +262,6 @@
 		));
 	}
 	
-
 	/* importeer Schaduw JS voor header */
 		function shadow_script_import() {
 			wp_enqueue_script(
@@ -273,9 +272,6 @@
 		}
 		
 		add_action( 'wp_enqueue_scripts', 'shadow_script_import' );
-		
-
-	
 	
 	error_reporting(E_ALL & ~E_NOTICE);
 ?>

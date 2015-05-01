@@ -1,13 +1,11 @@
-/* Moving Shadow */
+$j=jQuery.noConflict();
 
+$j(window).scroll(function() {    
+    var scroll = $j(window).scrollTop();
 
-	var header = $(".clearHeader");
-	$(window).scroll(function() {    
-		var scroll = $(window).scrollTop();
-		
-		if (scroll >= 80) {
-			header.removeClass('clearHeader').addClass('headershadow');
-			} else {
-			header.removeClass('headershadow').addClass('clearHeader');
-		}
-
+    if (scroll >= 50) {
+        $j(".clearHeader").addClass("headershadow");
+    } else {
+        $j(".clearHeader").removeClass("headershadow");
+    }
+});
