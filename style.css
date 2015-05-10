@@ -1085,6 +1085,7 @@ textarea, input {
 	Full-Width
 */
 .page-template-full-width .entry-header, .entry-content {
+max-width: 1280px!important;
 }
 
 /* -----------------/TEMPLATES -------------------------------*/
