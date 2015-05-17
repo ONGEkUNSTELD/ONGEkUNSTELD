@@ -1093,7 +1093,7 @@ textarea, input {
 
 /* ------------------- BEGIN FIXES --------------------------*/
 @media only screen 
-  and (max-device-width: 782px){
+  and (max-width: 782px){
     
     nav#primary-navigation {
     float: none!important;
