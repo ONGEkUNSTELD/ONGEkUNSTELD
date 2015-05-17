@@ -1085,7 +1085,7 @@ textarea, input {
 	Full-Width
 */
 .site-content.volledige-breedte .entry-header, .site-content.volledige-breedte .entry-content, .site-content.volledige-breedte .entry-summary, .site-content.volledige-breedte .entry-meta, .volledige-breedte .page-content {  
-max-width: 1000px !important;
+max-width: 1280px !important;
 }
 
 
