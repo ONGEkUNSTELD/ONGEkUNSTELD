@@ -1078,20 +1078,6 @@ textarea, input {
 	border-radius:0px;
 	border:0px;
 }
-
-
-/* -------------------TEMPLATES --------------------------*/
-/*
-	Full-Width
-*/
-.page-template-full-width .entry-header, .entry-content {
-
-}
-
-/* -----------------/TEMPLATES -------------------------------*/
-
-
-
 /* ----------------- MOBIEL -------------------------------*/
 /**Adjustments for the desktop topbar when screen is small*/
 @media screen and (max-width:1080px) {

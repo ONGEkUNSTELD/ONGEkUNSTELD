@@ -34,7 +34,8 @@
 		<!-- Adobe Typekit -->
 		<script src="//use.typekit.net/exf2nim.js"></script>
 		<script>try{Typekit.load();}catch(e){}</script>
-		
+        
+        
 	</head>
 	
 	<body <?php body_class(); ?>>
@@ -82,4 +83,4 @@
 			<?php endif; ?>
 			<!-- eind intro -->
 			
-		<div id="main" class="site-main">		
+		<div id="main" class="site-main">				
