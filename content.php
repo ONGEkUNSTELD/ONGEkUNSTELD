@@ -137,8 +137,7 @@
 								$args=array(
 								'tag__in' => $tag_ids,
 								'post__not_in' => array($post->ID),
-								'posts_per_page'=>6, // Number of related posts to display.
-								'caller_get_posts'=>1
+								'posts_per_page'=>8, // Number of related posts to display.
 								);
 								
 								$my_query = new wp_query( $args );
@@ -148,9 +147,9 @@
 								?>
 								
 								<div class="relatedthumb">
-									<a href="<? the_permalink()?>"><?php the_post_thumbnail(array(200,96)); ?></a><br />
+									<a href="<?php the_permalink()?>"><?php the_post_thumbnail(array(200,96)); ?></a><br />
 									<span class="categorie-related-link"><?php the_category(); ?></span><br />
-									<a href="<? the_permalink()?>"><span class="related-title"><?php the_title(); ?></span></a>
+									<a href="<?php the_permalink()?>"><span class="related-title"><?php the_title(); ?></span></a>
 									
 								</div>
 								
