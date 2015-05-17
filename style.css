@@ -1084,9 +1084,10 @@ textarea, input {
 /*
 	Full-Width
 */
-.page-template-full-width .entry-header, .entry-content {
-
+.site-content.volledige-breedte .entry-header, .site-content.volledige-breedte .entry-content, .site-content.volledige-breedte .entry-summary, .site-content.volledige-breedte .entry-meta, .volledige-breedte .page-content {  
+max-width: 1000px !important;
 }
+
 
 /* -----------------/TEMPLATES -------------------------------*/
 
