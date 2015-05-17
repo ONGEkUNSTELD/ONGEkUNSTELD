@@ -1093,7 +1093,11 @@ textarea, input {
 
 /* ------------------- BEGIN FIXES --------------------------*/
 @media only screen 
+<<<<<<< HEAD
 and (max-device-width: 782px){
+=======
+  and (max-width: 782px){
+>>>>>>> origin/Responsive-menu-test-v01
     
     nav#primary-navigation {
 		float: none!important;
