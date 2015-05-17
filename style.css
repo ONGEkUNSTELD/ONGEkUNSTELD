@@ -427,6 +427,10 @@ nav {
 	float:right;
 	position:absolute;
 }
+a.post-thumbnail:hover img {
+    opacity: 1.0;
+    box-shadow: 10px 10px 0px 0px;
+}
 .post-thumbnail hover {
 	background-color:#e8e8e8;
 	background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjZThlOGU4Ij48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2MiPjwvcmVjdD4KPC9zdmc+");
@@ -882,6 +886,9 @@ div.sharedaddy h3, sd-title {
 	margin-right:10px;
 }
 .relatedthumb img {
+}
+.relatedthumb img:hover {
+    box-shadow: 5px 5px 0px 0px #828282;
 }
 .relatedthumb a {
 	text-transform:uppercase;
