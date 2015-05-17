@@ -915,6 +915,9 @@ div.sharedaddy h3, sd-title {
     letter-spacing:0.09em;
 	
 }
+.related-title:hover{
+    color: #828282;
+}
 .relatedthumb a: hover {
 }
 /*------------------------- footer --------------------------------*/
