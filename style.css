@@ -513,11 +513,11 @@ h2+p {
 .entry-content h2 {
 	padding-left:42px;
 	font-family:"lft-etica",sans-serif;
-	letter-spacing:.1em;
+	letter-spacing:0.09em;
 	font-style:normal;
 	font-weight:700;
 	text-transform:uppercase;
-	font-size:0.88em;
+	font-size:14px;
 }
 .entry-meta {
 	font-family:"lft-etica",sans-serif;
@@ -809,7 +809,7 @@ div.sharedaddy h3, sd-title {
 	font-size:14px;
 	font-style:normal;
 	font-weight:700;
-	letter-spacing:0.06em;
+	letter-spacing:0.09em;
 	line-height:0.3em;
 	vertical-align:baseline;
 	padding-bottom:0px;
@@ -834,7 +834,7 @@ div.sharedaddy h3, sd-title {
 	max-width:100%;
 	background-color:#fff;
 	display:block;
-	display:none;
+	
 	margin:0 auto;
 	height:700px;
 	margin-bottom:0px;
@@ -842,31 +842,35 @@ div.sharedaddy h3, sd-title {
 	/*verbergen totdat we de opmaak op orde hebben*/
 }
 .gerelateerdContainer {
-	max-width:760px;
+	max-width:970px;
 	margin:0 auto;
 }
 .relatedposts {
 	margin:0 auto;
 	font-family:"lft-etica",sans-serif;
 	font-style:normal;
-	padding-top:40px;
+	padding-top:15px;
 }
 .relatedposts h3 {
 	font-size:1.3em;
 	text-transform:uppercase;
 	font-style:normal;
 	font-weight:100;
-	padding-bottom:10px;
+	padding-bottom:20px;
 	letter-spacing:0.1em;
+    margin-left: 15px;
+    
 }
 .relatedposts ul li {
 	text-transform:uppercase;
 	font-style:normal;
 	font-weight:100 !important;
-	font-size:12px;
+	font-size:11px;
 	display:inline;
 	list-style-type:none;
-	float:left;
+	text-align: left;
+    float: left;
+    clear: both;
 	line-height:100%;
 	padding-top:15px;
 	background-color:#fff;
@@ -877,13 +881,17 @@ div.sharedaddy h3, sd-title {
 .relatedthumb {
 	margin:0 1px 0 1px;
 	float:left;
-	max-width:200px;
+	max-width:212px;
 	text-align:left;
-	margin-right:10px;
+	margin-right:15px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    height: 240px;
 }
 .relatedthumb img {
+    width: 212px;
 }
-.relatedthumb a {
+.relatedthumb a {   
 	text-transform:uppercase;
 	font-family:"lft-etica",sans-serif;
 	font-style:normal;
@@ -895,14 +903,17 @@ div.sharedaddy h3, sd-title {
 }
 .related-title {
 	text-transform:uppercase;
-	a	font-family:"lft-etica",sans-serif !important;
-	font-size:1em;
+	font-family:"lft-etica",sans-serif !important;
+	font-size:14px;
 	font-style:normal;
-	float:left !important;
+	text-align: left;
+    clear: both;
+    float: left;
 	padding-top:5px;
 	font-weight:700;
 	line-height:1.4em;
-	letter-spacing:0.1em;
+    letter-spacing:0.09em;
+	
 }
 .relatedthumb a: hover {
 }
@@ -1084,10 +1095,9 @@ textarea, input {
 /*
 	Full-Width
 */
-.site-content.volledige-breedte .entry-header, .site-content.volledige-breedte .entry-content, .site-content.volledige-breedte .entry-summary, .site-content.volledige-breedte .entry-meta, .volledige-breedte .page-content {  
-max-width: 1280px !important;
-}
+.page-template-full-width .entry-header, .entry-content {
 
+}
 
 /* -----------------/TEMPLATES -------------------------------*/
 
