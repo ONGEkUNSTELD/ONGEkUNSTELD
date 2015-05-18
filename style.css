@@ -858,7 +858,7 @@ div.sharedaddy h3, sd-title {
 	font-weight:100;
 	padding-bottom:20px;
 	letter-spacing:0.1em;
-    margin-left: 15px;
+    margin-left: 16px;
     
 }
 .relatedposts ul li {
@@ -881,15 +881,15 @@ div.sharedaddy h3, sd-title {
 .relatedthumb {
 	margin:0 1px 0 1px;
 	float:left;
-	max-width:212px;
+	max-width:291px;
 	text-align:left;
-	margin-right:15px;
-    margin-left: 15px;
+	margin-right:16px;
+    margin-left: 16px;
     margin-bottom: 20px;
-    height: 220px;
+    height: 240px;
 }
 .relatedthumb img {
-    width: 212px;
+    width: 291px;
 }
 .relatedthumb a {   
 	text-transform:uppercase;
