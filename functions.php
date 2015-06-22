@@ -2,7 +2,7 @@
 	/*Functions voor OK2*/
 	/*Genereer Thumbs voor gerelateerd maten*/
 	add_theme_support( 'post-thumbnails' );
-	set_post_thumbnail_size( 200, 96, true );
+	set_post_thumbnail_size( 291, 140, true );
 	
 	
 	/*---- wijzig update functies formulieren -----*/
