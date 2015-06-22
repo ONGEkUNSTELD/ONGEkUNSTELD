@@ -137,7 +137,7 @@
 								$args=array(
 								'tag__in' => $tag_ids,
 								'post__not_in' => array($post->ID),
-								'posts_per_page'=>8, // Number of related posts to display.
+								'posts_per_page'=>6, // Number of related posts to display.
 								);
 								
 								$my_query = new wp_query( $args );
