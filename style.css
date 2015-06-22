@@ -900,6 +900,10 @@ div.sharedaddy h3, sd-title {
 	text-decoration:none;
 }
 .categorie-related-link {
+	
+}
+.categorie-related-link .post-categories li a {
+	color:#000 !important;
 }
 .related-title {
 	text-transform:uppercase;
@@ -1099,7 +1103,7 @@ textarea, input {
 	Full-Width
 */
 .page-template-full-width .entry-header, .entry-content {
-
+	
 }
 
 /* -----------------/TEMPLATES -------------------------------*/
@@ -1109,14 +1113,14 @@ textarea, input {
 /* ----------------- MOBIEL -------------------------------*/
 /**Adjustments for the desktop topbar when screen is small*/
 @media screen and (max-width:1080px) {
-
+	
 }
 @media screen and (max-width:768px) {
-#teaserWrapper, #site-banner {
-	display:none !important;
-}	
-.menu-toggle {
-}	
+	#teaserWrapper, #site-banner {
+		display:none !important;
+	}	
+	.menu-toggle {
+	}	
 }
 
 /* ============== EIND @SCREENS =====================*/
