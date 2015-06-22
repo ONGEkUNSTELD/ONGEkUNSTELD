@@ -147,7 +147,7 @@
 								?>
 								
 								<div class="relatedthumb">
-									<a href="<?php the_permalink()?>"><?php the_post_thumbnail(array(200,96)); ?></a><br />
+									<a href="<?php the_permalink()?>"><?php the_post_thumbnail(array(291,140)); ?></a><br />
 									<span class="categorie-related-link"><?php the_category(); ?></span><br />
 									<a href="<?php the_permalink()?>"><span class="related-title"><?php the_title(); ?></span></a>
 									
