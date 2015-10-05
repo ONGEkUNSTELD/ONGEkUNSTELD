@@ -251,16 +251,29 @@
 	}
 	add_filter( 'comments_open', 'filter_media_comment_status', 10 , 2 );
 	
-	/* opties voor custom aanpassingen in het thema */ 
+/* opties voor custom aanpassingen in het thema */ 
 	if( function_exists('acf_add_options_page') ) {
 		acf_add_options_page(array(
-		'page_title'   =>  'Header Titel',
-		'menu_title'   =>  'Header Titel',
-		'menu_slug'    =>  'header-title',
-		'capability'   =>  'manage_categories',
+		'page_title'   =>  'Redactie',
+		'menu_title'   =>  'Redactie',
+		'menu_slug'    =>  'redactie',
+		'capability'   =>  'edit_posts',
 		'redirect'     =>   false
 		));
+		
+		acf_add_options_sub_page(array(
+		'page_title' 	=> 'Redactie Header Tekst',
+		'menu_title'	=> 'Header',
+		'parent_slug'	=> 'redactie',
+		));
+		
+		acf_add_options_sub_page(array(
+		'page_title' 	=> 'Redactie Categorie Tekst',
+		'menu_title'	=> 'Categorie',
+		'parent_slug'	=> 'redactie',
+		));
 	}
+	
 	
 	/* importeer Schaduw JS voor header */
 		function shadow_script_import() {
