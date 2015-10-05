@@ -466,6 +466,7 @@ a.post-thumbnail:hover img {
     font-weight: 200;
     letter-spacing: 0.1em;
     font-style: normal;
+	text-align:justify;
 }
 .entry-summary p {
 	margin-bottom:54px;
