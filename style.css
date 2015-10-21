@@ -203,6 +203,19 @@ div.entry-header-Wrapper .entry-content {
 	margin-top: 0px;
 }
 
+.archive-header {
+	margin-top: 24px;
+	max-width: 940px;
+}
+
+.archive-header h1 {
+	padding:2px 0px 2px 7px;
+}
+
+.category-columns h1.archive-title {
+background-color:#82AAB9 !important;
+}
+
 /*---------------------------------- NAV --------------------------------------------*/
 /* Make room for the search toggle and site description in mobile sidebar */
 #slideout-top {
@@ -704,7 +717,12 @@ h2+p {
 	font-family:sans-serif;
 }
 .archive-title {
-
+font-family: "lft-etica",sans-serif;
+font-weight:800;
+font-style:normal;
+font-size:1.2em;
+text-transform:uppercase;
+letter-spacing: .15em;
 }
 /* Content Social Icons */
 /* JetPack Social Buttons */
