@@ -205,14 +205,32 @@ div.entry-header-Wrapper .entry-content {
 
 .archive-header {
 	margin-top: 24px;
-	max-width: 940px;
+	padding-bottom:24px;
+	max-width: 772px;
+	background-color:#FFF;
 }
 
-.archive-header h1 {
-	padding:2px 0px 2px 7px;
+.archive-header p {
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: .04em;
+    line-height: 1.6em;
+    font-size: 1.2em;
+    color: #000;
+
 }
 
-.category-columns h1.archive-title {
+.full-width .archive-header {
+	padding-right: 84px;
+	padding-left: 84px;
+}
+
+.archive-header h1.archive-title {
+	padding:24px 0px 15px 7px;
+	margin-left:-35px;
+}
+
+.category-columns .archive-title:h1 {
 background-color:#82AAB9 !important;
 }
 
