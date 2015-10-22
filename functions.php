@@ -36,6 +36,16 @@
 	}
 	add_filter( 'infinite_scroll_settings', 'my_infinite_scroll_settings' );
 	
+
+	/*Change the Options Page capability to 'manage_options*/
+	if( function_exists('acf_set_options_page_capability') )
+	{
+		acf_set_options_page_capability( 'moderate_comments' );
+	}
+	
+	
+	
+	
 	/*custom plaatsing Social Icons Jetpack*/
 	function jptweak_remove_share() {
 		remove_filter( 'the_content', 'sharing_display',19 );
@@ -251,13 +261,13 @@
 	}
 	add_filter( 'comments_open', 'filter_media_comment_status', 10 , 2 );
 	
-/* opties voor custom aanpassingen in het thema */ 
+	/* opties voor custom aanpassingen in het thema */ 
 	if( function_exists('acf_add_options_page') ) {
 		acf_add_options_page(array(
 		'page_title'   =>  'Redactie',
 		'menu_title'   =>  'Redactie',
 		'menu_slug'    =>  'redactie',
-		'capability'   =>  'edit_posts',
+		'capability'   =>  'edit_others_posts',
 		'redirect'     =>   false
 		));
 		
@@ -265,26 +275,31 @@
 		'page_title' 	=> 'Redactie Header Tekst',
 		'menu_title'	=> 'Header',
 		'parent_slug'	=> 'redactie',
+		'capability' 	=> 'edit_others_posts',
 		));
 		
 		acf_add_options_sub_page(array(
 		'page_title' 	=> 'Redactie Categorie Tekst',
 		'menu_title'	=> 'Categorie',
 		'parent_slug'	=> 'redactie',
+		'capability' 	=> 'edit_others_posts',
 		));
 	}
 	
 	
 	/* importeer Schaduw JS voor header */
-		function shadow_script_import() {
-			wp_enqueue_script(
-			'HeaderShadow',
-			get_stylesheet_directory_uri() . '/js/HeaderShadow.js',
-			array( 'jquery' )
-			);
-		}
-		
-		add_action( 'wp_enqueue_scripts', 'shadow_script_import' );
+	function shadow_script_import() {
+		wp_enqueue_script(
+		'HeaderShadow',
+		get_stylesheet_directory_uri() . '/js/HeaderShadow.js',
+		array( 'jquery' )
+		);
+	}
+	
+	add_action( 'wp_enqueue_scripts', 'shadow_script_import' );
+	
+	
+	
 	
 	error_reporting(E_ALL & ~E_NOTICE);
 ?>
