@@ -217,7 +217,7 @@ div.entry-header-Wrapper .entry-content {
     line-height: 1.6em;
     font-size: 1.2em;
     color: #000;
-
+	text-align:justify;
 }
 
 .full-width .archive-header {
