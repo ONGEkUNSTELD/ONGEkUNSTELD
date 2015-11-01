@@ -500,6 +500,22 @@ a.post-thumbnail:hover img {
     font-style: normal;
 	text-align:justify;
 }
+
+#redactie-tekst.entry-summary {
+	max-width:780px !important;
+	font-weight: normal;
+    letter-spacing: .04em;
+    line-height: 1.6em;
+
+    color: #000;
+    text-align: justify;
+	
+}
+
+#redactie-tekst.entry-summary p {
+	margin-bottom:5px;
+	    font-size: 19.2px;
+}
 .entry-summary p {
 	margin-bottom:54px;
 }
@@ -572,6 +588,12 @@ h2+p {
 	letter-spacing:0.1em;
 	color:#000;
 }
+
+#redactie-tekst.entry-meta {
+	padding-left:0px;
+	text-transform:uppercase;
+}
+
 .entry-meta-naam {
 	font-family:"lft-etica",sans-serif;
 	font-size:0.88em;

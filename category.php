@@ -19,14 +19,25 @@ get_header(); ?>
 		<header class="archive-header">
 			<h1 class="archive-title"><?php single_cat_title(); ?></h1>	
 			<!-- Echo Redactie Tekst -->
+			<div id="redactie-tekst" class="entry-summary">
 			<?php 
-				if(is_category( 'beeldend' )){ the_field('beeldendtekst', 'option');}
+				if(is_category( 'beeldend' )){
+					the_field('beeldendtekst', 'option'); 
+					$redacteurcat = get_field('redacteur-beeldend', 'option');
+					$redacteur_naam = array_values($redacteurcat); ?>
+				<div id="redactie-tekst" class="entry-meta" >
+					<a href="<?php echo get_author_posts_url ( $redacteur_naam[0] ); ?>">
+					<span class="entry-meta-functie entry-meta-naam"> <?php echo $redacteur_naam[5]; ?> </a> </span> 
+					<span class="entry-meta-functie entry-meta-naam" >&mdash; Eindredacteur Beeldend</span>
+					</div><?php
+				}
 				if(is_category( 'literatuur' )){ the_field('literatuurtekst', 'option');}
 				if(is_category( 'muziek' )){ the_field('muziektekst', 'option');}
 				if(is_category( 'theater' )){ the_field('theatertekst', 'option');}
 				if(is_category( 'columns' )){ the_field('columnstekst', 'option');}
 				if(is_category( 'film' )){ the_field('filmtekst', 'option');}
 			?>	
+			</div>
 		</header><!-- .archive-header -->
 		
 		<?php
