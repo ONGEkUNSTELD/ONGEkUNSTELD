@@ -488,11 +488,13 @@ a.post-thumbnail:hover img {
 .entry-header {
 	padding-top:-10px !important;
 }
+
 .site-content .entry-header,.site-content .entry-content,.site-content .entry-summary,.site-content .entry-meta,.page-content {
 	max-width:700px;
 	padding-bottom:25px;
 	padding-top:7px;
-}    
+}
+
 .entry-summary {
     font-family:"lft-etica",sans-serif;
     font-weight: 200;
@@ -506,9 +508,9 @@ a.post-thumbnail:hover img {
 	font-weight: normal;
     letter-spacing: .04em;
     line-height: 1.6em;
-
     color: #000;
     text-align: justify;
+    
 	
 }
 
@@ -539,7 +541,6 @@ a.post-thumbnail:hover img {
 	line-height:1.6em;
 	font-size:1.2em;
 	color:#000;
-	padding-top:32px !important;
 	padding-bottom:2px !important;
 	max-width:592px !important;
 	text-indent:0px;
@@ -610,7 +611,7 @@ h2+p {
 	padding:0px;
 	margin:0px;
     font-style: normal;
-	color:#767676;
+	
 }
 .entry-meta-naam a:hover {
 	color:#000000 !important;
@@ -738,6 +739,7 @@ h2+p {
 	padding-top:15px;
 	padding-left:20px;
 	padding-right:0px;
+    padding-bottom: 32px;
 }
 .entry-summary {
 	font-style:italic;
@@ -746,7 +748,7 @@ h2+p {
 	line-height:1.6em;
 	font-size:1.2em;
 	color:#000;
-	padding-top:32px !important;
+	padding-top:32px;
 	padding-bottom:2px !important;
 	max-width:592px !important;
 }
