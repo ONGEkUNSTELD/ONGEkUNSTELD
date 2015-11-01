@@ -588,7 +588,7 @@ h2+p {
 	max-width:700px;
 	padding-right:55px;
 	letter-spacing:0.1em;
-	color:#000;
+	
 }
 
 #redactie-tekst.entry-meta {
@@ -613,7 +613,7 @@ h2+p {
 	padding:0px;
 	margin:0px;
     font-style: normal;
-	
+	color: #767676;
 }
 .entry-meta-naam a:hover {
 	color:#000000 !important;
@@ -626,6 +626,7 @@ h2+p {
 	margin-right:0px;
 	font-style:normal;
 	font-weight:200;
+    color: #000;
 }
 .entry-meta-datum {
 	float:right;
