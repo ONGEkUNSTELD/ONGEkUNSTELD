@@ -510,7 +510,8 @@ a.post-thumbnail:hover img {
     line-height: 1.6em;
     color: #000;
     text-align: justify;
-    
+    padding-left: 0px;
+    padding-right: 0px;
 	
 }
 
@@ -594,6 +595,7 @@ h2+p {
 	padding-left:0px;
 	text-transform:uppercase;
     font-weight:700 !important;
+    max-width: 780px;
 }
 
 #redactie-tekst.entry-meta a {
