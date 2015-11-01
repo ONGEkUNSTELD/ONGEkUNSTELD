@@ -488,17 +488,36 @@ a.post-thumbnail:hover img {
 .entry-header {
 	padding-top:-10px !important;
 }
+
 .site-content .entry-header,.site-content .entry-content,.site-content .entry-summary,.site-content .entry-meta,.page-content {
 	max-width:700px;
 	padding-bottom:25px;
 	padding-top:7px;
-}    
+}
+
 .entry-summary {
     font-family:"lft-etica",sans-serif;
     font-weight: 200;
     letter-spacing: 0.1em;
     font-style: normal;
 	text-align:justify;
+}
+
+#redactie-tekst.entry-summary {
+	max-width:780px !important;
+	font-weight: normal;
+    letter-spacing: .04em;
+    line-height: 1.6em;
+    color: #000;
+    text-align: justify;
+    padding-left: 0px;
+    padding-right: 0px;
+	
+}
+
+#redactie-tekst.entry-summary p {
+	margin-bottom:5px;
+	    font-size: 19.2px;
 }
 .entry-summary p {
 	margin-bottom:54px;
@@ -523,7 +542,6 @@ a.post-thumbnail:hover img {
 	line-height:1.6em;
 	font-size:1.2em;
 	color:#000;
-	padding-top:32px !important;
 	padding-bottom:2px !important;
 	max-width:592px !important;
 	text-indent:0px;
@@ -564,39 +582,58 @@ h2+p {
 .entry-meta {
 	font-family:"lft-etica",sans-serif;
 	font-weight:bold;
-	font-size:0.88em;
+	font-size:12px;
 	padding-top:15px;
 	padding-left:55px;
 	max-width:700px;
 	padding-right:55px;
 	letter-spacing:0.1em;
-	color:#000;
+	
 }
+
+#redactie-tekst.entry-meta {
+	padding-left:0px;
+	text-transform:uppercase;
+    font-weight:700 !important;
+    max-width: 780px;
+}
+
+#redactie-tekst.entry-meta a {
+	text-decoration: none;
+}
+
+#redactie-tekst.entry-meta a:hover {
+	color: #000000;
+}
+
+
 .entry-meta-naam {
 	font-family:"lft-etica",sans-serif;
-	font-size:0.88em;
+	font-size:12px;
 	padding:0px;
 	margin:0px;
-	color:#767676;
+    font-style: normal;
+	
 }
 .entry-meta-naam a:hover {
 	color:#000000 !important;
 }
 .entry-meta-functie {
 	font-family:"lft-etica",sans-serif;
-	font-size:0.88em;
+	font-size:12px;
 	padding:0px;
 	margin:0px;
 	margin-right:0px;
 	font-style:normal;
 	font-weight:200;
+    color: #000;
 }
 .entry-meta-datum {
 	float:right;
 	clear:right;
 	color:#000;
 	font-family:"lft-etica",sans-serif;
-	font-size:0.78em;
+	font-size:12px;
 	font-weight:200;
 	display:inline;
 }
@@ -624,7 +661,7 @@ h2+p {
 	float:right;
 	color:#FFFFFF;
 	font-family:"lft-etica",sans-serif;
-	font-size:0.88em;
+	font-size:12px;
 	font-weight:200;
 	list-style-position:outside;
 	display:inline;
@@ -692,7 +729,7 @@ h2+p {
 }
 .cat-links,.post-categories a {
 	color:#FFFFFF;
-	margin-top:3px;
+	margin-top:0px;
 	margin-bottom:1px;
 }
 .entry-title {
@@ -705,6 +742,7 @@ h2+p {
 	padding-top:15px;
 	padding-left:20px;
 	padding-right:0px;
+    padding-bottom: 32px;
 }
 .entry-summary {
 	font-style:italic;
@@ -713,7 +751,7 @@ h2+p {
 	line-height:1.6em;
 	font-size:1.2em;
 	color:#000;
-	padding-top:32px !important;
+	padding-top:32px;
 	padding-bottom:2px !important;
 	max-width:592px !important;
 }
