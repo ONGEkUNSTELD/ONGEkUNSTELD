@@ -57,15 +57,34 @@ get_header(); ?>
                     $redacteurcat = get_field('redacteur-theater', 'option');
 					$redacteur_naam = array_values($redacteurcat); ?>
 				<div id="redactie-tekst" class="entry-meta" >
-                    <span class="entry-meta-functie entry-meta-naam" >Eindredacteur Muziek</span>
+                    <span class="entry-meta-functie entry-meta-naam" >Eindredacteur Theater</span>
 					<a href="<?php echo get_author_posts_url ( $redacteur_naam[0] ); ?>">
 					<span class="entry-meta-naam"> <?php echo $redacteur_naam[5]; ?> </a> </span> 
 					</div><?php
                                             
                 }
 
-				if(is_category( 'columns' )){ the_field('columnstekst', 'option');}
-				if(is_category( 'film' )){ the_field('filmtekst', 'option');}
+                if(is_category( 'columns' )){ the_field('columnstekst', 'option');
+                    $redacteurcat = get_field('redacteur-columns', 'option');
+					$redacteur_naam = array_values($redacteurcat); ?>
+				<div id="redactie-columns" class="entry-meta" >
+                    <span class="entry-meta-functie entry-meta-naam" >Eindredacteur Columns</span>
+					<a href="<?php echo get_author_posts_url ( $redacteur_naam[0] ); ?>">
+					<span class="entry-meta-naam"> <?php echo $redacteur_naam[5]; ?> </a> </span> 
+					</div><?php
+                                            
+                }
+
+				if(is_category( 'film' )){ the_field('filmtekst', 'option');
+                    $redacteurcat = get_field('redacteur-film', 'option');
+					$redacteur_naam = array_values($redacteurcat); ?>
+				<div id="redactie-film" class="entry-meta" >
+                    <span class="entry-meta-functie entry-meta-naam" >Eindredacteur Film</span>
+					<a href="<?php echo get_author_posts_url ( $redacteur_naam[0] ); ?>">
+					<span class="entry-meta-naam"> <?php echo $redacteur_naam[5]; ?> </a> </span> 
+					</div><?php
+                                            
+                }                      
                 
             else{
                 //
