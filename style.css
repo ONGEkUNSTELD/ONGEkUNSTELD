@@ -580,7 +580,7 @@ h2+p {
 .entry-meta {
 	font-family:"lft-etica",sans-serif;
 	font-weight:bold;
-	font-size:0.88em;
+	font-size:12px;
 	padding-top:15px;
 	padding-left:55px;
 	max-width:700px;
@@ -592,13 +592,24 @@ h2+p {
 #redactie-tekst.entry-meta {
 	padding-left:0px;
 	text-transform:uppercase;
+    font-weight:700 !important;
 }
+
+#redactie-tekst.entry-meta a {
+	text-decoration: none;
+}
+
+#redactie-tekst.entry-meta a:hover {
+	color: #000000;
+}
+
 
 .entry-meta-naam {
 	font-family:"lft-etica",sans-serif;
-	font-size:0.88em;
+	font-size:12px;
 	padding:0px;
 	margin:0px;
+    font-style: normal;
 	color:#767676;
 }
 .entry-meta-naam a:hover {
@@ -606,7 +617,7 @@ h2+p {
 }
 .entry-meta-functie {
 	font-family:"lft-etica",sans-serif;
-	font-size:0.88em;
+	font-size:12px;
 	padding:0px;
 	margin:0px;
 	margin-right:0px;
@@ -618,7 +629,7 @@ h2+p {
 	clear:right;
 	color:#000;
 	font-family:"lft-etica",sans-serif;
-	font-size:0.78em;
+	font-size:12px;
 	font-weight:200;
 	display:inline;
 }
@@ -646,7 +657,7 @@ h2+p {
 	float:right;
 	color:#FFFFFF;
 	font-family:"lft-etica",sans-serif;
-	font-size:0.88em;
+	font-size:12px;
 	font-weight:200;
 	list-style-position:outside;
 	display:inline;
@@ -714,7 +725,7 @@ h2+p {
 }
 .cat-links,.post-categories a {
 	color:#FFFFFF;
-	margin-top:3px;
+	margin-top:0px;
 	margin-bottom:1px;
 }
 .entry-title {

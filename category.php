@@ -27,11 +27,23 @@ get_header(); ?>
 					$redacteur_naam = array_values($redacteurcat); ?>
 				<div id="redactie-tekst" class="entry-meta" >
 					<a href="<?php echo get_author_posts_url ( $redacteur_naam[0] ); ?>">
-					<span class="entry-meta-functie entry-meta-naam"> <?php echo $redacteur_naam[5]; ?> </a> </span> 
-					<span class="entry-meta-functie entry-meta-naam" >&mdash; Eindredacteur Beeldend</span>
+					<span class="entry-meta-naam"> <?php echo $redacteur_naam[5]; ?> </a> </span> 
+					<span class="entry-meta-functie entry-meta-naam" >Eindredacteur Beeldend</span>
 					</div><?php
 				}
-				if(is_category( 'literatuur' )){ the_field('literatuurtekst', 'option');}
+				if(is_category( 'literatuur' )){
+                    the_field('literatuurtekst', 'option'); 
+					$redacteurcat = get_field('redacteur-literatuur', 'option');
+					$redacteur_naam = array_values($redacteurcat); ?>
+				<div id="redactie-tekst" class="entry-meta" >
+					<a href="<?php echo get_author_posts_url ( $redacteur_naam[0] ); ?>">
+					<span class="entry-meta-naam"> <?php echo $redacteur_naam[5]; ?> </a> </span> 
+					<span class="entry-meta-functie entry-meta-naam" >Eindredacteur Literatuur</span>
+					</div><?php
+                                               
+                                               
+                                               
+                }
 				if(is_category( 'muziek' )){ the_field('muziektekst', 'option');}
 				if(is_category( 'theater' )){ the_field('theatertekst', 'option');}
 				if(is_category( 'columns' )){ the_field('columnstekst', 'option');}
