@@ -53,6 +53,7 @@ em {
 	font-style:italic;
 	font-style:underline;
 }
+
 ::selection {
 	background-color:#828282;
 	color:#fff;
@@ -261,6 +262,8 @@ h1.archive-title:hover {
 }
 #menu-hoofd-navigatie {
 	float:right;
+    width: 445px;
+    
 }
 #menu-toggle .genericon {
 	font-size:48px;
@@ -275,12 +278,12 @@ h1.archive-title:hover {
 #masthead {
 	height:48px;
 	position:fixed;
-    left: 0 !important;
     max-width: 100%;
 }
 nav {
 	color:#000000;
 	letter-spacing:0.1em;
+    right: -2px;
 }
 .site-navigation .current_page_item>a,.site-navigation .current_page_ancestor>a,.site-navigation .current-menu-item>a,.site-navigation .current-menu-ancestor>a {
 	color:#000;
@@ -293,8 +296,49 @@ nav {
 .primary-navigation ul ul a:hover,.primary-navigation ul ul li.focus>a,.primary-navigation ul ul a {
 	background-color:#FFF;
 	color:#000;
-	width:90px;
+	width: 0px;
 }
+
+/* breedte kop artikelen */
+#menu-item-13298 a {
+    width: 76px;
+}
+
+/*Breedte submenu artikelen*/	
+.sub-menu #menu-item-13020 a,.sub-menu #menu-item-13035 a,.sub-menu #menu-item-12953 a,.sub-menu #menu-item-12954 a,.sub-menu #menu-item-12955 a,.sub-menu #menu-item-12447 a {
+   width: 90px !important;
+}
+
+/* breedte kop meedoen */
+#menu-item-14141 a {
+    width: 67px;
+}
+
+/*Breedte submenu meedoen*/	
+.sub-menu #menu-item-14150 a,.sub-menu #menu-item-14151 a,.sub-menu #menu-item-14156 a,.sub-menu #menu-item-14204 a,.sub-menu #menu-item-14481 a {
+   width: 81px !important;
+}
+
+/* breedte kop over ons */
+#menu-item-13300 a {
+    width: 70px;
+}
+
+/*Breedte submenu over ons*/	
+.sub-menu #menu-item-13330 a {
+   width: 84px !important;
+}
+
+/* breedte kop contact */
+#menu-item-14139 a {
+    width: 66px;
+}
+
+/*Breedte submenu contact*/	
+.sub-menu #menu-item-13332 a,.sub-menu #menu-item-13331 a,.sub-menu #menu-item-14503 a {
+   width: 80px !important;
+}
+
 
 /*Grijze achtergrond voor alle menu opties op hover*/
 .primary-navigation ul ul a:hover {
@@ -305,6 +349,7 @@ nav {
 	background-color:#e8e8e8;
 	color:#000;
 }
+
 /*Categorie Columns*/	
 #menu-item-13020 :hover{
 	background-color: #82AAB9 !important;
@@ -362,6 +407,7 @@ nav {
 	-webkit-box-shadow: 0px 4px 4px 0px rgba(50, 50, 50, 0.21);
 	-moz-box-shadow:    0px 4px 4px 0px rgba(50, 50, 50, 0.21);
 	box-shadow:         0px 4px 4px 0px rgba(50, 50, 50, 0.21);
+
 }
 /*Nav onder Hoofdmenu voorpgania*/
 #headerMenu {
