@@ -6,8 +6,8 @@
 		wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css', array(), '1.1.0', "all" );
 	}
 	
+	/*Toon de titel van iedere pagina*/
 	add_theme_support( 'title-tag' );
-	add_action( 'after_setup_theme', 'title-tag' );
 	
 	/*Functions voor OK2*/
 	/*Genereer Thumbs voor gerelateerd maten*/
@@ -311,5 +311,5 @@
 	
 	
 	
-	error_reporting(0);
+	error_reporting(E_ALL);
 ?>
