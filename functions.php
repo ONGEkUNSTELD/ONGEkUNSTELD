@@ -1,4 +1,11 @@
 <?php
+	/*Creeer child theme activering*/
+	add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
+function theme_enqueue_styles() {
+    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+
+}
+	
 	/*Functions voor OK2*/
 	/*Genereer Thumbs voor gerelateerd maten*/
 	add_theme_support( 'post-thumbnails' );
