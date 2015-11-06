@@ -1,10 +1,11 @@
 <?php
 	/*Creeer child theme activering*/
+	/*Bij updates aan de CSS het versienummer aanpassen */ 
 	add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
-function theme_enqueue_styles() {
-    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
-
-}
+	function theme_enqueue_styles() {
+		wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css', array(), '1.1.0', "all" );
+		
+	}
 	
 	/*Functions voor OK2*/
 	/*Genereer Thumbs voor gerelateerd maten*/
@@ -43,7 +44,7 @@ function theme_enqueue_styles() {
 	}
 	add_filter( 'infinite_scroll_settings', 'my_infinite_scroll_settings' );
 	
-
+	
 	/*Change the Options Page capability to 'manage_options*/
 	if( function_exists('acf_set_options_page_capability') )
 	{
