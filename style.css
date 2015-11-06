@@ -9,7 +9,7 @@
 	Text Domain:ONGEkUNSTELD V2
 */
 
-@import url("../twentyfourteen/style.css");
+
 
 /*---------------- Algemene bewerkingen -- Onderop de mobiele aanpassingen ------------*/
 
@@ -30,6 +30,9 @@ body {
 body.custom-background {
 	background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjZThlOGU4Ij48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2MiPjwvcmVjdD4KPC9zdmc+");
 }
+
+
+
 a {
 	color:#828282;
 }
