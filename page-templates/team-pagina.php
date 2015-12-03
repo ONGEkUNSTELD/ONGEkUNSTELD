@@ -42,11 +42,12 @@ get_header(); ?>
 						
 						
 						<?php
-							
-							// The Query
+						
+			
+							// Zoek gebruikers op rol
 							$user_query = new WP_User_Query( array( 'role' => 'contributor' ) );
 							
-							// User Loop
+							// Loop om alle gebruikers op rol te tonen
 							if ( ! empty( $user_query->results ) ) {
 								foreach ( $user_query->results as $user ) {
 									echo '<p>' . $user->display_name . '</p>';
@@ -55,9 +56,11 @@ get_header(); ?>
 								echo 'No users found.';
 							}
 							
-							wp_list_authors('show_fullname=1&optioncount=1&orderby=post_count&order=DESC&number=300');
 							
-							wp_list_authors('show_fullname=1&optioncount=1&orderby=post_count&order=DESC&number=300'); 
+							
+							//Echo alle rss-feeds van alle gebruikers als HTML in een lijst
+							wp_list_authors('optioncount=0&orderby=name&order=ASC&hide_empty=0&html=1&show_fullname=0&style=none');
+
 						?>
 						
 						
