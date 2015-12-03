@@ -38,14 +38,18 @@ get_header(); ?>
 					<div class="teamcontent">    
 						
 						
-						
-						
-						
 						<?php
-						
-			
-							// Zoek gebruikers op rol
-							$user_query = new WP_User_Query( array( 'role' => 'contributor' ) );
+							
+							
+							// WP_User_Query argumenten om naar te zoeken en weer te geven
+							$args = array (
+							'role'     => 'contributor',
+							'orderby'   => 'display_name',
+							'fields'   => array( 'id' ),
+							);
+							
+							$user_query = new WP_User_Query( $args  );
+							
 							
 							// Loop om alle gebruikers op rol te tonen
 							if ( ! empty( $user_query->results ) ) {
@@ -53,14 +57,13 @@ get_header(); ?>
 									echo '<p>' . $user->display_name . '</p>';
 								}
 								} else {
-								echo 'No users found.';
+								echo 'Dit werkt niet';
 							}
 							
 							
-							
-							//Echo alle rss-feeds van alle gebruikers als HTML in een lijst
-							wp_list_authors('optioncount=0&orderby=name&order=ASC&hide_empty=0&html=1&show_fullname=0&style=none');
-
+							/*
+							//Echo alle rss-feeds van alle gebruikers als HTML in een lijst							wp_list_authors('optioncount=0&orderby=name&order=ASC&hide_empty=0&html=1&show_fullname=0&style=none');
+							*/
 						?>
 						
 						
