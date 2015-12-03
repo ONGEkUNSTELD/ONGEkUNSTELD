@@ -99,16 +99,28 @@ button:active,.button:active,input[type="button"]:active,input[type="reset"]:act
 	display:block;
 	padding-top: 58px;
 }
-/*dit is de TEAM pagina*/
+/*dit is de tijdelijke TEAM pagina*/
 .page-id-13327 #site-banner {
 	background-image:none;
 	/*Hier een custom image voor teampagina,let op HTTPSSSSSSS*/
 	display:block;
 	padding-top:58px;
 }
+
 .page-id-13327 #site-banner img {
 	opacity:0;
 }
+
+/*dit is de TEAM pagina */
+.page-id-14159 #site-banner {
+    background-image: url("../ONGEkUNSTELD/images/banners/ongekunsteld-vacatures-1280.png");
+    display:block;
+	padding-top:58px;
+}
+.page-id-14159 #site-banner img {
+    opacity: 0;
+}
+
 /*dit is de VACATURE pagina*/
 .page-id-13624 #site-banner {
 	background-image: url("../ONGEkUNSTELD/images/banners/ongekunsteld-vacatures-1280.png");
