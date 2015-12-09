@@ -88,6 +88,38 @@ button:active,.button:active,input[type="button"]:active,input[type="reset"]:act
 	background-color: #000;
 }
 
+/*---------- blockquote-----------------*/
+.entry-content blockquote p:first-child{
+	font-size: 16px;
+	font-variant:normal;
+	margin: 0;
+	margin-left:40px;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	quotes: "\201C""\201D""\2018""\2019";
+	font-family: "lft-etica",sans-serif;
+	font-style: italic;
+	font-weight: 200;
+	margin-bottom: 54px;
+	text-align:left;
+	line-height: 100%;
+}
+
+blockquote:before {
+	color: #ccc;
+	content: open-quote;
+	font-size: 4em;
+	line-height: 0.1em;
+	margin-right: 0.25em;
+	vertical-align: -0.4em;
+}
+
+blockquote {
+	display: inline;
+	text-indent:200px;x;
+}
+
 /*--------------------------------- HEADER ------------------------------------------*/		
 /*Header image alleen op front page*/
 #site-banner {
