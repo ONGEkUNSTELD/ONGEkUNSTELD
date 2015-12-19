@@ -68,16 +68,15 @@
 	add_action( 'loop_start', 'jptweak_remove_share' );
 	
 	
-	/*dashboard alert media
-		function addAlert() { ?>
-		<script type="text/javascript">
-		$j = jQuery;
-		$j().ready(function(){
-		$j('.wrap > h2').parent().prev().after('<div class="update-nag">Succes! Als je dit leest ben je op de nieuwe server van ongeKUNSTeld. Mooi. Als het goed is, is alles hetzelfde. Kom je problemen tegen? Stuur een mail naar <a href="mailto:dennisneumann@galmoer.nl">dennisneumann@galmoer.nl</a></div>');
-		});
-		</script>
-		<?php } add_action('admin_head','addAlert');
-	*/
+	/*dashboard alert media*/
+function my_admin_error_notice() {
+	$class = "update-nag";
+	$message = "ONGEkUNSTELD is vanavond vanaf 23:00 uur offline voor onderhoud! Sla je werk op en werk niet aan je artikelen tijdens het onderhoud!";
+        echo"<div class=\"$class\"> <p>$message</p></div>"; 
+}
+add_action( 'admin_notices', 'my_admin_error_notice' ); 
+
+	
 	
 	
 	/*Verander login logo*/
