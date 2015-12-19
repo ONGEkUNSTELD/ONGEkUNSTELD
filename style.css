@@ -841,6 +841,7 @@ div.sharedaddy {
 	margin-top:20px;
 	margin-bottom:0px;
 	padding-left:25px;
+	float:left;
 }
 div.sharedaddy ul {
 	margin:0;
@@ -924,6 +925,54 @@ div.sharedaddy h3, sd-title {
 	letter-spacing: 0.1em;
 	color:#000 !important;
 }
+
+/*Nieuwsbrief formulier*/
+#mc_embed_signup {
+	float:right;
+	margin-top:30px;
+	margin-right:25px;
+	font-size:12px;
+	font-family:"lft-etica", sans-serif;
+}
+
+#mc_embed_signup h2 {
+	font-size:12px;
+	text-align:right;
+	padding-bottom:0px;
+	margin-bottom:7px;
+}
+
+.mc-field-group {
+text-align:right;
+
+}
+
+#mce-EMAIL {
+	font-family:"lft-etica", sans-serif;
+	color:#000;
+	font-size:9.6px;
+	font-style:normal;
+	font-weight:300;
+	letter-spacing:3.2px;
+	margin:0px;
+	margin-right:2px;
+	padding:2px;
+	vertical-align:baseline;
+	max-width:150px;
+}
+
+#mc-embedded-subscribe {
+
+	font-family:"lft-etica", sans-serif;
+	font-size:9.6px;
+	font-style:normal;
+	font-weight:300;
+	letter-spacing:3.2px;
+	margin:0px;
+	padding:2px;
+	vertical-align:baseline;
+}
+
 /* Content Teaser DOE MEE! */
 #teaserWrapper {
 	max-width:760px;
