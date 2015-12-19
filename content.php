@@ -30,7 +30,7 @@
 			if ( 'post' == get_post_type() ) ?>
 			<span class="entry-meta-functie">TEKSt</span> <span class="entry-meta-naam"><?php the_author_posts_link(); ?></span> &nbsp; &nbsp; 
 			<!-- oude versie beeldnaam. Komt te vervallen -->
-			<span class="entry-meta-functie">BEELD</span> <span class="entry-meta-naam"><?php echo get_post_meta( get_the_ID(), 'Beeldnaam', true); ?></span><!-- einde oude versie -->
+			<span class="entry-meta-functie">BEELD</span> <span class="entry-meta-naam"><a href="https://www.ongekunsteld.net/beeldredactie/"><?php echo get_post_meta( get_the_ID(), 'Beeldnaam', true); ?></a></span><!-- einde oude versie -->
 			
 			<?php
 				if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) :
