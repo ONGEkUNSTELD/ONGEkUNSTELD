@@ -332,6 +332,11 @@ nav {
    width: 84px !important;
 }
 
+/*Breedte submenu beeld*/
+.sub-menu #menu-item-15173 a {
+	width: 84px !important;
+}
+
 /* breedte kop contact */
 #menu-item-14139 a {
     width: 66px;
