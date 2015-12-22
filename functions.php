@@ -3,7 +3,7 @@
 	/*Bij updates aan de CSS het versienummer aanpassen */ 
 	add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 	function theme_enqueue_styles() {
-		wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css', array(), '1.1.0', "all" );
+		wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css', array(), '1.1.1', "all" );
 	}
 	
 	/*Toon de titel van iedere pagina*/
