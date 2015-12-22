@@ -37,35 +37,22 @@ get_header(); ?>
                 <div class="entry-content">
 					<div class="teamcontent">    
 						
-						
+						<p>Eindredactie</p>
 						<?php
-							
-							
-							// WP_User_Query argumenten om naar te zoeken en weer te geven
-							$args = array (
-							'role'     => 'contributor',
-							'orderby'   => 'display_name',
-							'fields'   => array( 'id' ),
-							);
-							
-							$user_query = new WP_User_Query( $args  );
-							
-							
-							// Loop om alle gebruikers op rol te tonen
-							if ( ! empty( $user_query->results ) ) {
-								foreach ( $user_query->results as $user ) {
-									echo '<p>' . $user->display_name . '</p>';
-								}
-								} else {
-								echo 'Dit werkt niet';
-							}
-							
-							
-							/*
-							//Echo alle rss-feeds van alle gebruikers als HTML in een lijst							wp_list_authors('optioncount=0&orderby=name&order=ASC&hide_empty=0&html=1&show_fullname=0&style=none');
-							*/
+							midea_list_authors('editor');
 						?>
-						
+						<p>Redactie</p>
+						<?php
+							midea_list_authors('author');
+						?>
+						<p>Schrijvers</p>
+						<?php
+							midea_list_authors('contributor');
+						?>
+						<p>Beekdmakers</p>
+						<?php
+							midea_list_authors('beeldmaker');
+						?>
 						
 					</div>
 				</div>
