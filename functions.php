@@ -352,17 +352,13 @@
 			AND  post_type =  'post'
 			AND  post_status =  'publish'");
 			
-			// only output authors with posts; ugly way to get to the result, but it works....
-			
 
-				
 				// load info on this user
 				$author = get_userdata( $item);
 				
 				// store output in temp array; we use last names as an index in this array
 				$holding_pen[$author->last_name] =  '<li><a href="' . $blog_url . '/author/'  . $author->user_login  . '"> ' . $author->display_name . ' (' . $post_count[0]->cnt . ')</a> </li>';
-
-			
+	
 		}
 		
 		// now sort the array on the index to get alpha order
