@@ -78,7 +78,17 @@
 			
 			
 			
-	
+			<!--   Plaats deel icons    -->
+			<?php	if ( function_exists( 'sharing_display' ) ) {
+				sharing_display( '', true );
+			}
+			
+			if ( class_exists( 'Jetpack_Likes' ) ) {
+				$custom_likes = new Jetpack_Likes;
+				echo $custom_likes->post_likes( '' );	
+			}
+			?>
+			<!-- einde social Jetpack-->
 			
 			<!-- Begin MailChimp Signup Form -->
 			<div id="mc_embed_signup">
