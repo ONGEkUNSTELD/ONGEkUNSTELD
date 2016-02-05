@@ -558,12 +558,16 @@ a.post-thumbnail:hover img {
 }
 .entry-header {
 	padding-top:-10px !important;
+    
 }
 
 .site-content .entry-header,.site-content .entry-content,.site-content .entry-summary,.site-content .entry-meta,.page-content {
 	max-width:700px;
 	padding-bottom:25px;
 	padding-top:7px;
+}
+.entry-header {
+    padding-bottom: 0px !important;
 }
 
 .entry-summary {
@@ -603,7 +607,7 @@ a.post-thumbnail:hover img {
 	letter-spacing:.06em;
 	line-height:1.9em;
 	padding-top:3px !important;
-	padding-bottom:45px !important;
+	padding-bottom:70px !important;
 }
 /* Eerste paragraaf stylen */
 .entry-content p:first-child {
@@ -617,7 +621,7 @@ a.post-thumbnail:hover img {
 	max-width:592px !important;
 	text-indent:0px;
 	margin-bottom:50px;
-	margin-top:0px;
+	margin-top:12px;
 }
 .entry-content p:first-child em, .entry-content p:first-child strong {
 	font-weight:400;
@@ -815,6 +819,10 @@ h2+p {
 	padding-left:20px;
 	padding-right:0px;
     padding-bottom: 32px;
+    margin: 0 0 0px 0;
+}
+.entry-title h1 {
+    margin-bottom: 0px !important
 }
 .entry-summary {
 	font-style:italic;
@@ -1325,23 +1333,23 @@ textarea, input {
     -moz-column-count: 1; /* Firefox */
     column-count: 1;
 }
-.teamcontent p {
+.teamcolumn p {
 	font-weight:bold;
 	font-size:12px;
-	padding-top:15px;
+    line-height: 30px;
+	padding-top:30px;
 	padding-left:0px;
     padding-bottom: 0;
 	max-width:700px;
 	letter-spacing:0.1em;
 }
 .teamcontent p:first-child {
+    margin-left: 0;
 }
 .teamcolumn p:first-child {
     font-weight:bold;
 	font-size:12px;
-	padding-top:15px;
-	padding-left:0px;
-    padding-bottom: 0;
+    line-height: 30px;
     margin: 0;
 	max-width:700px;
 	letter-spacing:0.1em;
