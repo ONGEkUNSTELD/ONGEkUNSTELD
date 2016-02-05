@@ -35,38 +35,43 @@ get_header(); ?>
 				?>
                 
                 <div class="entry-content">
-					<div class="teamcontent">    
+					<div class="teamcontent">   
+                        
+                        <p>foptekst: Ons team bestaat uit schrijvers, beeldmakers en andere mensen die betrokken zijn bij ongekunsteld</p> 
+                        
 				        <div class="teamcolumn">
-						  <p>Eindredactie</p>
+                           
+                            
+						  <p>EINDREDACTIE</p>
 						  <?php
 							 midea_list_authors('editor');
 						  ?>
-						  <p>Redactie</p>
+						  <p>REDACTIE</p>
 						  <?php
 							 midea_list_authors('author');
 						  ?>
-                          <p>Webdevelopment</p>
+                          <p>WEBDEVELOPMENT</p>
                             
-                            <a href="https://www.ongekunsteld.net" target="_blank">Dennis Neumann</a>
+                                <a href="https://www.ongekunsteld.net" target="_blank">Dennis Neumann</a>
                             <br>
-                            <a href="https://www.nikostenhoedt.nl" target="_blank">Nikos ten Hoedt</a>
+                                <a href="https://www.nikostenhoedt.nl" target="_blank">Nikos ten Hoedt</a>
                             <br>
-                            <a href="https://www.http://studiowaterenbrood.nl" target="_blank">Marco van Zomeren</a>
+                                <a href="https://www.http://studiowaterenbrood.nl" target="_blank">Marco van Zomeren</a>
                             
-                            <p>Grafisch ontwerp</p>
-                            <a href="http://www.fennaschaap.nl" target="_blank">Fenna Schaap</a>
+                            <p>GRAFISCH ONTWERP</p>
+                                <a href="http://www.fennaschaap.nl" target="_blank">Fenna Schaap</a>
                             <br>
-                            <a href="https://www.nikostenhoedt.nl" target="_blank">Nikos ten Hoedt</a>
+                                <a href="https://www.nikostenhoedt.nl" target="_blank">Nikos ten Hoedt</a>
                             
                             </div>
                         <div class="teamcolumn">
-						  <p>Schrijvers</p>
+						  <p>SCHRIJVERS</p>
 						  <?php
 							 midea_list_authors('contributor');
 						  ?>
                             </div> 
                         <div class="teamcolumn">
-						  <p>Beeldmakers</p>
+						  <p>BEELDMAKERS</p>
 						  <?php
 							 midea_list_authors('beeldmaker');
 						  ?>

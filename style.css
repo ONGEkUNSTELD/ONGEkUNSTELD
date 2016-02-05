@@ -113,9 +113,14 @@ button:active,.button:active,input[type="button"]:active,input[type="reset"]:act
 
 /*dit is de TEAM pagina */
 .page-id-14159 #site-banner {
-    background-image: url("../ONGEkUNSTELD/images/banners/ongekunsteld-vacatures-1280.png");
+    background-image: url("../ONGEkUNSTELD/images/banners/ongekunsteld-teampagina.jpg");
     display:block;
 	padding-top:58px;
+    background-size: 1280px 240px;
+    background-position: left bottom; 
+	background-repeat: no-repeat;
+    left:0;
+	top:0;
 }
 .page-id-14159 #site-banner img {
     opacity: 0;
@@ -1328,12 +1333,17 @@ textarea, input {
     padding-bottom: 0;
 	max-width:700px;
 	letter-spacing:0.1em;
-    text-transform: uppercase;
 }
-.teamcontent p:first-child{
+.teamcontent p:first-child {
+}
+.teamcolumn p:first-child {
     font-weight:bold;
 	font-size:12px;
-    margin-bottom: 0;
+	padding-top:15px;
+	padding-left:0px;
+    padding-bottom: 0;
+    margin: 0;
+	max-width:700px;
 	letter-spacing:0.1em;
     text-transform: uppercase;
     font-style: normal;
