@@ -356,8 +356,15 @@ add_action( 'admin_notices', 'my_admin_error_notice' );
 				$author = get_userdata( $item);
 				
 				// store output in temp array; we use last names as an index in this array
-				$holding_pen[$author->last_name] =  '<li><a href="' . $blog_url . '/author/'  . $author->user_login  . '"> ' . $author->display_name . ' (' . $post_count[0]->cnt . ')</a> </li>';
-	
+				if ($user_role == 'beeldmaker') {
+				$holding_pen[$author->last_name] =  '<li><a href="' . $blog_url . '/author/'  . $author->user_login  . '"> ' . $author->display_name . ' </a> </li>';
+				}
+				
+				else {
+				if ($post_count[0]->cnt) {
+				$holding_pen[$author->last_name] =  '<li><a href="' . $blog_url . '/author/'  . $author->user_login  . '"> ' . $author->display_name . ' </a> </li>';
+				}
+				}
 		}
 		
 		// now sort the array on the index to get alpha order
