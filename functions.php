@@ -357,12 +357,12 @@ add_action( 'admin_notices', 'my_admin_error_notice' );
 				
 				// store output in temp array; we use last names as an index in this array
 				if ($user_role == 'beeldmaker') {
-				$holding_pen[$author->last_name] =  '<li><a href="' . $blog_url . '/author/'  . $author->user_login  . '"> ' . $author->display_name . ' </a> </li>';
+				$holding_pen[$author->first_name] =  '<li><a href="' . $blog_url . '/author/'  . $author->user_login  . '"> ' . $author->display_name . ' </a> </li>';
 				}
 				
 				else {
 				if ($post_count[0]->cnt) {
-				$holding_pen[$author->last_name] =  '<li><a href="' . $blog_url . '/author/'  . $author->user_login  . '"> ' . $author->display_name . ' </a> </li>';
+				$holding_pen[$author->first_name] =  '<li><a href="' . $blog_url . '/author/'  . $author->user_login  . '"> ' . $author->display_name . ' </a> </li>';
 				}
 				}
 		}
