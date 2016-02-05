@@ -1329,9 +1329,8 @@ textarea, input {
 	
 }
 .teamcontent {
-    -webkit-column-count: 1; /* Chrome, Safari, Opera */
-    -moz-column-count: 1; /* Firefox */
-    column-count: 1;
+margin: 0 auto;
+    max-width:592px !important;
 }
 .teamcolumn p {
 	font-weight:bold;
@@ -1344,7 +1343,7 @@ textarea, input {
 	letter-spacing:0.1em;
 }
 .teamcontent p:first-child {
-    margin-left: 0;
+    
 }
 .teamcolumn p:first-child {
     font-weight:bold;

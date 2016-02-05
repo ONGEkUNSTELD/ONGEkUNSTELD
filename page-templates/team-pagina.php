@@ -54,14 +54,14 @@ get_header(); ?>
                             
                                 <a href="https://www.ongekunsteld.net" target="_blank">Dennis Neumann</a>
                             <br>
-                                <a href="https://www.nikostenhoedt.nl" target="_blank">Nikos ten Hoedt</a>
+                                <a href="http://www.nikostenhoedt.nl" target="_blank">Nikos ten Hoedt</a>
                             <br>
-                                <a href="https://www.http://studiowaterenbrood.nl" target="_blank">Marco van Zomeren</a>
+                                <a href="http://www.http://studiowaterenbrood.nl" target="_blank">Marco van Zomeren</a>
                             
                             <p>GRAFISCH ONTWERP</p>
                                 <a href="http://www.fennaschaap.nl" target="_blank">Fenna Schaap</a>
                             <br>
-                                <a href="https://www.nikostenhoedt.nl" target="_blank">Nikos ten Hoedt</a>
+                                <a href="http://www.nikostenhoedt.nl" target="_blank">Nikos ten Hoedt</a>
                             
                             </div>
                         <div class="teamcolumn">
