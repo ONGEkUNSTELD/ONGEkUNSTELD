@@ -644,6 +644,7 @@ h2+p {
 	font-weight:700;
 	text-transform:uppercase;
 	font-size:14px;
+    letter-spacing:0.1em;
 }
 .entry-meta {
 	font-family:"lft-etica",sans-serif;
@@ -1313,6 +1314,38 @@ textarea, input {
 */
 .page-template-full-width .entry-header, .entry-content {
 	
+}
+.teamcontent {
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+}
+.teamcontent p {
+	font-weight:bold;
+	font-size:12px;
+	padding-top:15px;
+	padding-left:0px;
+    padding-bottom: 0;
+	max-width:700px;
+	letter-spacing:0.1em;
+    text-transform: uppercase;
+}
+.teamcontent p:first-child{
+    font-weight:bold;
+	font-size:12px;
+    margin-bottom: 0;
+	letter-spacing:0.1em;
+    text-transform: uppercase;
+    font-style: normal;
+}
+.teamcontent ul {
+    list-style-type: none;
+    margin: 0 0 0px 0px;
+}
+.teamcolumn {
+    width: 33.33%;
+    float: left;
+    clear: none;
 }
 
 /* -----------------/TEMPLATES -------------------------------*/

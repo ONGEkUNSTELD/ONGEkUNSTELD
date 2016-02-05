@@ -371,5 +371,5 @@ add_action( 'admin_notices', 'my_admin_error_notice' );
 	}
 	
 	
-	error_reporting(E_ALL);
+	error_reporting(0);
 ?>
