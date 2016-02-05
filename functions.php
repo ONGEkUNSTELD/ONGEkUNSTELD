@@ -3,7 +3,7 @@
 	/*Bij updates aan de CSS het versienummer aanpassen */ 
 	add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 	function theme_enqueue_styles() {
-		wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css', array(), '1.1.0', "all" );
+		wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css', array(), '1.1.1', "all" );
 	}
 	
 	/*Toon de titel van iedere pagina*/
@@ -68,16 +68,15 @@
 	add_action( 'loop_start', 'jptweak_remove_share' );
 	
 	
-	/*dashboard alert media
-		function addAlert() { ?>
-		<script type="text/javascript">
-		$j = jQuery;
-		$j().ready(function(){
-		$j('.wrap > h2').parent().prev().after('<div class="update-nag">Succes! Als je dit leest ben je op de nieuwe server van ongeKUNSTeld. Mooi. Als het goed is, is alles hetzelfde. Kom je problemen tegen? Stuur een mail naar <a href="mailto:dennisneumann@galmoer.nl">dennisneumann@galmoer.nl</a></div>');
-		});
-		</script>
-		<?php } add_action('admin_head','addAlert');
-	*/
+	/*dashboard alert media*/
+function my_admin_error_notice() {
+	$class = "update-nag";
+	$message = "ONGEkUNSTELD is vanavond vanaf 23:00 uur offline voor onderhoud! Sla je werk op en werk niet aan je artikelen tijdens het onderhoud!";
+        echo"<div class=\"$class\"> <p>$message</p></div>"; 
+}
+add_action( 'admin_notices', 'my_admin_error_notice' ); 
+
+	
 	
 	
 	/*Verander login logo*/

@@ -30,7 +30,7 @@
 			if ( 'post' == get_post_type() ) ?>
 			<span class="entry-meta-functie">TEKSt</span> <span class="entry-meta-naam"><?php the_author_posts_link(); ?></span> &nbsp; &nbsp; 
 			<!-- oude versie beeldnaam. Komt te vervallen -->
-			<span class="entry-meta-functie">BEELD</span> <span class="entry-meta-naam"><?php echo get_post_meta( get_the_ID(), 'Beeldnaam', true); ?></span><!-- einde oude versie -->
+			<span class="entry-meta-functie">BEELD</span> <span class="entry-meta-naam"><a href="https://www.ongekunsteld.net/beeldredactie/"><?php echo get_post_meta( get_the_ID(), 'Beeldnaam', true); ?></a></span><!-- einde oude versie -->
 			
 			<?php
 				if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) :
@@ -85,11 +85,30 @@
 			
 			if ( class_exists( 'Jetpack_Likes' ) ) {
 				$custom_likes = new Jetpack_Likes;
-				echo $custom_likes->post_likes( '' );
-				
+				echo $custom_likes->post_likes( '' );	
 			}
 			?>
 			<!-- einde social Jetpack-->
+			
+			<!-- Begin MailChimp Signup Form -->
+			<div id="mc_embed_signup">
+				<form action="//ongekunsteld.us10.list-manage.com/subscribe/post?u=33677d8b31e62e54c748e5115&amp;id=83c32c15d5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<div id="mc_embed_signup_scroll">
+						<h2>Ontvang onze nieuwsbrief</h2>
+						<div class="mc-field-group">
+							<label for="mce-EMAIL"></label>
+							<input type="email" value="JE EMAIL" name="EMAIL" class="required email" id="mce-EMAIL">
+							<input type="submit" value="Meld je aan!" name="subscribe" id="mc-embedded-subscribe" class="button">
+						</div>
+						<div id="mce-responses" class="clear">
+							<div class="response" id="mce-error-response" style="display:none"></div>
+							<div class="response" id="mce-success-response" style="display:none"></div>
+						</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+						<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_33677d8b31e62e54c748e5115_83c32c15d5" tabindex="-1" value=""></div>
+					</div>
+				</form>
+			</div>
+			<!--End mc_embed_signup-->
 			
 			
 		</div><!-- .entry-content -->
@@ -161,4 +180,4 @@
 					</div><!--eind gerelateerdContainer-->
 				</div><!--eind relatedposts-->
 			</div><!--eind gerelateerdWrapper-->
-		<?php endif;									
+		<?php endif;											
