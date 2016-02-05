@@ -357,12 +357,16 @@ add_action( 'admin_notices', 'my_admin_error_notice' );
 				
 				// store output in temp array; we use last names as an index in this array
 				if ($user_role == 'beeldmaker') {
-				$holding_pen[$author->first_name] =  '<li><a href="' . $blog_url . '/author/'  . $author->user_login  . '"> ' . $author->display_name . ' </a> </li>';
+				$user_link = $author->user_login;
+				$user_link_clean = str_replace(' ', '-', $user_link);
+				$holding_pen[$author->first_name] =  '<li><a href="' . $blog_url . '/author/'  . $user_link_clean  . '"> ' . $author->display_name . ' </a> </li>';
 				}
 				
 				else {
 				if ($post_count[0]->cnt) {
-				$holding_pen[$author->first_name] =  '<li><a href="' . $blog_url . '/author/'  . $author->user_login  . '"> ' . $author->display_name . ' </a> </li>';
+				$user_link = $author->user_login;
+				$user_link_clean = str_replace(' ', '-', $user_link);
+				$holding_pen[$author->first_name] =  '<li><a href="' . $blog_url . '/author/'  . $user_link_clean  . '"> ' . $author->display_name . ' </a> </li>';
 				}
 				}
 		}
@@ -372,6 +376,7 @@ add_action( 'admin_notices', 'my_admin_error_notice' );
 		
 		// now we can spit the output out.
 		foreach ($holding_pen as $key=>$value) {
+			
 			echo $value;
 		}
 		echo '</ul>';
