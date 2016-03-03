@@ -99,16 +99,33 @@ button:active,.button:active,input[type="button"]:active,input[type="reset"]:act
 	display:block;
 	padding-top: 58px;
 }
-/*dit is de TEAM pagina*/
+/*dit is de tijdelijke TEAM pagina*/
 .page-id-13327 #site-banner {
 	background-image:none;
 	/*Hier een custom image voor teampagina,let op HTTPSSSSSSS*/
 	display:block;
 	padding-top:58px;
 }
+
 .page-id-13327 #site-banner img {
 	opacity:0;
 }
+
+/*dit is de TEAM pagina */
+.page-id-14159 #site-banner {
+    background-image: url("../ONGEkUNSTELD/images/banners/ongekunsteld-teampagina.jpg");
+    display:block;
+	padding-top:58px;
+    background-size: 1280px 240px;
+    background-position: left bottom; 
+	background-repeat: no-repeat;
+    left:0;
+	top:0;
+}
+.page-id-14159 #site-banner img {
+    opacity: 0;
+}
+
 /*dit is de VACATURE pagina*/
 .page-id-13624 #site-banner {
 	background-image: url("../ONGEkUNSTELD/images/banners/ongekunsteld-vacatures-1280.png");
@@ -541,12 +558,16 @@ a.post-thumbnail:hover img {
 }
 .entry-header {
 	padding-top:-10px !important;
+    
 }
 
 .site-content .entry-header,.site-content .entry-content,.site-content .entry-summary,.site-content .entry-meta,.page-content {
 	max-width:700px;
 	padding-bottom:25px;
 	padding-top:7px;
+}
+.entry-header {
+    padding-bottom: 0px !important;
 }
 
 .entry-summary {
@@ -586,7 +607,7 @@ a.post-thumbnail:hover img {
 	letter-spacing:.06em;
 	line-height:1.9em;
 	padding-top:3px !important;
-	padding-bottom:45px !important;
+	padding-bottom:70px !important;
 }
 /* Eerste paragraaf stylen */
 .entry-content p:first-child {
@@ -600,7 +621,7 @@ a.post-thumbnail:hover img {
 	max-width:592px !important;
 	text-indent:0px;
 	margin-bottom:50px;
-	margin-top:0px;
+	margin-top:12px;
 }
 .entry-content p:first-child em, .entry-content p:first-child strong {
 	font-weight:400;
@@ -632,6 +653,7 @@ h2+p {
 	font-weight:700;
 	text-transform:uppercase;
 	font-size:14px;
+    letter-spacing:0.1em;
 }
 .entry-meta {
 	font-family:"lft-etica",sans-serif;
@@ -797,6 +819,10 @@ h2+p {
 	padding-left:20px;
 	padding-right:0px;
     padding-bottom: 32px;
+    margin: 0 0 0px 0;
+}
+.entry-title h1 {
+    margin-bottom: 0px !important
 }
 .entry-summary {
 	font-style:italic;
@@ -1301,6 +1327,42 @@ textarea, input {
 */
 .page-template-full-width .entry-header, .entry-content {
 	
+}
+.teamcontent {
+margin: 0 auto;
+    max-width:592px !important;
+}
+.teamcolumn p {
+	font-weight:bold;
+	font-size:12px;
+    line-height: 30px;
+	padding-top:30px;
+	padding-left:0px;
+    padding-bottom: 0;
+	max-width:700px;
+	letter-spacing:0.1em;
+}
+.teamcontent p:first-child {
+    
+}
+.teamcolumn p:first-child {
+    font-weight:bold;
+	font-size:12px;
+    line-height: 30px;
+    margin: 0;
+	max-width:700px;
+	letter-spacing:0.1em;
+    text-transform: uppercase;
+    font-style: normal;
+}
+.teamcontent ul {
+    list-style-type: none;
+    margin: 0 0 0px 0px;
+}
+.teamcolumn {
+    width: 33.33%;
+    float: left;
+    clear: none;
 }
 
 /* -----------------/TEMPLATES -------------------------------*/
