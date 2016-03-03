@@ -37,7 +37,7 @@ get_header(); ?>
                 <div class="entry-content">
 					<div class="teamcontent">   
                         
-                        <p>foptekst: Ons team bestaat uit schrijvers, beeldmakers en andere mensen die betrokken zijn bij ongekunsteld</p> 
+                        <p>Er is een schrijversteam van om en nabij 33 actieve schrijvers en een beeldmakersteam van inmiddels 24 vaste beeldmakers. Verder is iedereen vrij om een account aan te maken en artikelen in te sturen voor publicatie. Sporadisch treden gastschrijvers en gastbeeldmakers op. Onze samenstelling wisselt, toch is niemand inwisselbaar.</p> 
                         
 				        <div class="teamcolumn">
                            
