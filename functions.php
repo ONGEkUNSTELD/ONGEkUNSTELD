@@ -359,7 +359,7 @@ add_action( 'admin_notices', 'my_admin_error_notice' );
 				if ($user_role == 'beeldmaker') {
 				$user_link = $author->user_login;
 				$user_link_clean = str_replace(' ', '-', $user_link);
-				$holding_pen[$author->first_name] =  '<li><a href="' . $blog_url . '/author/'  . $user_link_clean  . '"> ' . $author->display_name . ' </a> </li>';
+				$holding_pen[$author->first_name] =  '<li><a href="' . $blog_url . '/beeldredactie/' . '"> ' . $author->display_name . ' </a> </li>';
 				}
 				
 				else {
