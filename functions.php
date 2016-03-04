@@ -368,7 +368,14 @@ add_action( 'admin_notices', 'my_admin_error_notice' );
 				$user_link_clean = str_replace(' ', '-', $user_link);
 				$holding_pen[$author->last_name] =  '<li><a href="' . $blog_url . '/beeldredactie/' . '"> ' . $author->display_name . ' </a> </li>';
 				}
+				else if ($user_role == 'ondersteuner') {
+				$user_link = $author->user_login;
+				$user_link_clean = str_replace(' ', '-', $user_link);
+				$holding_pen[$author->last_name] =  '<li><a href="' . $blog_url . '/author/'  . $user_link_clean  . '"> ' . $author->display_name . ' </a> </li>';
 				}
+				}
+				
+				
 		}
 		
 		
