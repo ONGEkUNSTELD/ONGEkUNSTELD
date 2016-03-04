@@ -151,11 +151,12 @@ add_action( 'admin_notices', 'my_admin_error_notice' );
 		/*   Array of custom status messages            */
 		/* ----------------------------------- */
 		$custom_status = array(
-		'Afgekeurd',
-		'Terug_Beeld_Ontbreekt',
-		'Terug_Beeld_Klaar',
-		'Tekst_Klaar_Beeld_Ontbreekt',
-		'Tekst_Klaar_Beeld_Klaar',
+		'T-terug_B-ontbreekt',
+		'T-terug_B-klaar',
+		'T-corrector_B-ontbreekt',
+		'T-corrector_B-klaar',
+		'T-klaar_B-ontbreekt',
+		'T-klaar_B-klaar',
 		);
 		echo '<div class="misc-pub-section custom">';
 		echo '<label>Custom status: </label><select name="status">';
@@ -192,11 +193,17 @@ add_action( 'admin_notices', 'my_admin_error_notice' );
 		/* ----------------------------------- */
 		/*   change color of messages bellow            */
 		/* ----------------------------------- */
-		.afgekeurd{background:#FF0000;color:#fff;}
+		.tekst terug beeld ontbreekt{background:#FF0000;color:#fff;}
 		.terug_beeld_ontbreekt{background:#FF8D00;color:#fff;}
 		.terug_beeld_klaar{background:#FF9D00;color:#000;}
 		.tekst_klaar_beeld_ontbreekt{background:#FCFF00;color:#000;}
 		.tekst_klaar_beeld_klaar{background:#00FF99;color:#333;}
+		.t-terug_b-ontbreekt {background:#FF4000;color:#fff ;}
+		.t-terug_b-klaar {background:#FF8000;color:#fff ;}
+		.t-corrector_b-ontbreekt {background:#FFBF00;color:#000 ;}
+		.t-corrector_b-klaar {background:#FFFF00;color:#000 ;}
+		.t-klaar_b-ontbreekt {background:#80FF00;color:#000 ;}
+		.t-klaar_b-klaar {background:#00FF00;color:#000 ;}
 		</style>';
 	}	
 	
