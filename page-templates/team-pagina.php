@@ -42,11 +42,11 @@ get_header(); ?>
 				        <div class="teamcolumn">
                            
                             
-						  <p>EINDREDACTIE</p>
+						  <p>HOOFDREDACTIE</p>
 						  <?php
 							 midea_list_authors('editor');
 						  ?>
-						  <p>REDACTIE</p>
+						  <p>EINDREDACTIE</p>
 						  <?php
 							 midea_list_authors('author');
 						  ?>
