@@ -37,16 +37,15 @@ get_header(); ?>
                 <div class="entry-content">
 					<div class="teamcontent">   
                         
-                        <p>Er is een schrijversteam van om en nabij 33 actieve schrijvers en een beeldmakersteam van inmiddels 24 vaste beeldmakers. Verder is iedereen vrij om een account aan te maken en artikelen in te sturen voor publicatie. Sporadisch treden gastschrijvers en gastbeeldmakers op. Onze samenstelling wisselt, toch is niemand inwisselbaar.</p> 
                         
 				        <div class="teamcolumn">
                            
                             
-						  <p>EINDREDACTIE</p>
+						  <p>HOOFDREDACTIE</p>
 						  <?php
 							 midea_list_authors('editor');
 						  ?>
-						  <p>REDACTIE</p>
+						  <p>EINDREDACTIE</p>
 						  <?php
 							 midea_list_authors('author');
 						  ?>

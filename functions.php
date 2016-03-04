@@ -356,20 +356,21 @@ add_action( 'admin_notices', 'my_admin_error_notice' );
 				$author = get_userdata( $item);
 				
 				// store output in temp array; we use last names as an index in this array
-				if ($user_role == 'beeldmaker') {
-				$user_link = $author->user_login;
-				$user_link_clean = str_replace(' ', '-', $user_link);
-				$holding_pen[$author->first_name] =  '<li><a href="' . $blog_url . '/beeldredactie/' . '"> ' . $author->display_name . ' </a> </li>';
-				}
-				
-				else {
 				if ($post_count[0]->cnt) {
 				$user_link = $author->user_login;
 				$user_link_clean = str_replace(' ', '-', $user_link);
-				$holding_pen[$author->first_name] =  '<li><a href="' . $blog_url . '/author/'  . $user_link_clean  . '"> ' . $author->display_name . ' </a> </li>';
+				$holding_pen[$author->last_name] =  '<li><a href="' . $blog_url . '/author/'  . $user_link_clean  . '"> ' . $author->display_name . ' </a> </li>';
+				}
+				
+				else { 
+				if ($user_role == 'beeldmaker') {
+				$user_link = $author->user_login;
+				$user_link_clean = str_replace(' ', '-', $user_link);
+				$holding_pen[$author->last_name] =  '<li><a href="' . $blog_url . '/beeldredactie/' . '"> ' . $author->display_name . ' </a> </li>';
 				}
 				}
 		}
+		
 		
 		// now sort the array on the index to get alpha order
 		ksort($holding_pen);
