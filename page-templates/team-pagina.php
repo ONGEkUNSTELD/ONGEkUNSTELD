@@ -24,6 +24,7 @@ get_header(); ?>
 			<?php
 				// Start the Loop.
 				while ( have_posts() ) : the_post();
+				
 			?>
 			
             
@@ -35,6 +36,7 @@ get_header(); ?>
 				?>
                 
                 <div class="entry-content">
+				<?php the_content(); ?>
 					<div class="teamcontent">   
                         
                         
@@ -48,6 +50,10 @@ get_header(); ?>
 						  <p>EINDREDACTIE</p>
 						  <?php
 							 midea_list_authors('author');
+						  ?>
+						  <p>ONDERSTEUNING</p>
+						  <?php
+							 midea_list_authors('ondersteuner');
 						  ?>
                           <p>WEBDEVELOPMENT</p>
                             
